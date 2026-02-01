@@ -1,0 +1,1583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- SEO -->
+<title>Orbicure Products | Premium Pharmaceutical Solutions</title>
+<meta name="description" content="Discover Orbicure's premium pharmaceutical products - innovative healthcare solutions with cutting-edge research and uncompromising quality.">
+<meta name="keywords" content="Orbicure Products, Pharmaceutical Solutions, Healthcare Products, Den Pro, Premium Medicines">
+<meta name="author" content="Orbicure Pvt Ltd">
+<meta name="robots" content="index, follow">
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<style>
+:root {
+    --bg: #05070b;
+    --card-bg: #0b1225;
+    --section-bg: #070a15;
+    --text: #ffffff;
+    --text-secondary: #b0b0b0;
+    --primary: #1f6bff;
+    --primary-light: #5fa8ff;
+    --accent: #00d4ff;
+    --accent-glow: rgba(0, 212, 255, 0.2);
+    --gold: #ffd700;
+    --border: rgba(255, 255, 255, 0.08);
+    --shadow: rgba(0, 0, 0, 0.5);
+    
+    /* Light theme variables - will be toggled via JS */
+    --bg-light: #f8fafc;
+    --card-bg-light: #ffffff;
+    --section-bg-light: #f1f5f9;
+    --text-light: #1e293b;
+    --text-secondary-light: #64748b;
+    --border-light: rgba(0, 0, 0, 0.08);
+    --shadow-light: rgba(0, 0, 0, 0.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    transition: background-color 0.5s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+body {
+    background: var(--bg);
+    color: var(--text);
+    overflow-x: hidden;
+    line-height: 1.6;
+    transition: background-color 0.5s ease;
+}
+
+body.light-theme {
+    background: var(--bg-light);
+    color: var(--text-light);
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+h1, .section-title {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+}
+
+/* ================= THEME TOGGLE ================= */
+.theme-toggle-container {
+    position: fixed;
+    top: 100px;
+    right: 30px;
+    z-index: 999;
+}
+
+.theme-toggle {
+    width: 60px;
+    height: 30px;
+    background: var(--card-bg);
+    border-radius: 50px;
+    border: 1px solid var(--border);
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 8px;
+    transition: all 0.3s ease;
+}
+
+body.light-theme .theme-toggle {
+    background: var(--card-bg-light);
+    border-color: var(--border-light);
+}
+
+.toggle-icon {
+    font-size: 14px;
+    color: var(--text);
+    transition: all 0.3s ease;
+}
+
+body.light-theme .toggle-icon {
+    color: var(--text-light);
+}
+
+.toggle-slider {
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    background: linear-gradient(135deg, var(--primary), var(--accent));
+    border-radius: 50%;
+    top: 3px;
+    left: 5px;
+    transition: transform 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+    box-shadow: 0 2px 5px var(--shadow);
+}
+
+body.light-theme .toggle-slider {
+    transform: translateX(30px);
+}
+
+/* ================= PREMIUM HEADER ================= */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    backdrop-filter: blur(20px);
+    background: rgba(5, 7, 11, 0.85);
+    border-bottom: 1px solid var(--border);
+    padding: 0;
+    transition: all 0.4s ease;
+}
+
+body.light-theme header {
+    background: rgba(248, 250, 252, 0.9);
+    border-bottom-color: var(--border-light);
+}
+
+.header-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 20px 0;
+    text-decoration: none;
+}
+
+.logo-icon {
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, var(--primary), var(--accent));
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 22px;
+    color: white;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.5s ease;
+}
+
+.logo-icon::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, transparent, rgba(255, 255, 255, 0.2));
+}
+
+.logo-container:hover .logo-icon {
+    transform: rotate(15deg) scale(1.1);
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    background: linear-gradient(90deg, var(--text), var(--primary-light));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+body.light-theme .logo {
+    background: linear-gradient(90deg, var(--text-light), var(--primary));
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.logo span {
+    color: var(--primary);
+}
+
+.nav-links {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.nav-link {
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    position: relative;
+    padding: 25px 0;
+    transition: color 0.3s ease;
+}
+
+body.light-theme .nav-link {
+    color: var(--text-secondary-light);
+}
+
+.nav-link:hover {
+    color: var(--text);
+}
+
+body.light-theme .nav-link:hover {
+    color: var(--text-light);
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--primary), var(--accent));
+    border-radius: 10px;
+    transition: width 0.4s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.nav-btn {
+    padding: 12px 28px;
+    border-radius: 50px;
+    border: 1px solid var(--primary);
+    color: var(--primary);
+    background: transparent;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    transition: all 0.4s ease;
+    margin-left: 10px;
+}
+
+.nav-btn:hover {
+    background: var(--primary);
+    color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(31, 107, 255, 0.3);
+}
+
+.mobile-menu-btn {
+    display: none;
+    background: transparent;
+    border: none;
+    color: var(--text);
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+body.light-theme .mobile-menu-btn {
+    color: var(--text-light);
+}
+
+/* ================= PRODUCTS HERO ================= */
+.products-hero {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 160px 20px 100px;
+    position: relative;
+    overflow: hidden;
+}
+
+.products-hero-bg {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(rgba(5, 7, 11, 0.9), rgba(5, 7, 11, 0.95)), url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><rect width="100" height="100" fill="%230b1225"/><path d="M0,50 Q25,25 50,50 T100,50" stroke="%231f6bff" stroke-width="0.5" fill="none"/><path d="M0,30 Q25,5 50,30 T100,30" stroke="%2300d4ff" stroke-width="0.3" fill="none" opacity="0.7"/></svg>');
+    background-size: 200px;
+    opacity: 1;
+    z-index: -1;
+}
+
+body.light-theme .products-hero-bg {
+    background: linear-gradient(rgba(248, 250, 252, 0.9), rgba(248, 250, 252, 0.95)), url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><rect width="100" height="100" fill="%23f1f5f9"/><path d="M0,50 Q25,25 50,50 T100,50" stroke="%231f6bff" stroke-width="0.5" fill="none"/><path d="M0,30 Q25,5 50,30 T100,30" stroke="%2300d4ff" stroke-width="0.3" fill="none" opacity="0.7"/></svg>');
+    background-size: 200px;
+}
+
+.products-hero-glow {
+    position: absolute;
+    width: 800px;
+    height: 800px;
+    background: radial-gradient(circle, var(--accent-glow) 0%, transparent 70%);
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    animation: pulseGlow 8s infinite alternate ease-in-out;
+}
+
+@keyframes pulseGlow {
+    0% { opacity: 0.5; transform: translate(-50%, -50%) scale(1); }
+    100% { opacity: 0.8; transform: translate(-50%, -50%) scale(1.1); }
+}
+
+.products-hero-content {
+    position: relative;
+    max-width: 1000px;
+    z-index: 2;
+}
+
+.products-hero-subtitle {
+    font-size: 18px;
+    color: var(--primary-light);
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+    font-weight: 500;
+    animation: fadeInUp 1s ease;
+}
+
+.products-hero h1 {
+    font-size: clamp(42px, 7vw, 78px);
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 30px;
+    animation: fadeInUp 1s ease 0.2s both;
+}
+
+.products-dynamic-text-container {
+    display: inline-block;
+    position: relative;
+    height: 90px;
+    overflow: hidden;
+    margin: 10px 0;
+}
+
+.products-dynamic-text {
+    font-size: clamp(42px, 7vw, 78px);
+    font-weight: 700;
+    color: var(--primary);
+    display: flex;
+    flex-direction: column;
+    animation: slideText 9s infinite ease-in-out;
+}
+
+@keyframes slideText {
+    0%, 20% { transform: translateY(0); }
+    25%, 45% { transform: translateY(-90px); }
+    50%, 70% { transform: translateY(-180px); }
+    75%, 95% { transform: translateY(-270px); }
+    100% { transform: translateY(0); }
+}
+
+.products-hero p {
+    margin: 30px auto 0;
+    color: var(--text-secondary);
+    font-size: 18px;
+    max-width: 700px;
+    line-height: 1.8;
+    animation: fadeInUp 1s ease 0.4s both;
+}
+
+body.light-theme .products-hero p {
+    color: var(--text-secondary-light);
+}
+
+/* ================= SEARCH SECTION ================= */
+.search-section {
+    padding: 80px 20px;
+    background: var(--section-bg);
+    position: relative;
+}
+
+body.light-theme .search-section {
+    background: var(--section-bg-light);
+}
+
+.search-container {
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.search-box {
+    background: var(--card-bg);
+    border-radius: 20px;
+    padding: 40px;
+    border: 1px solid var(--border);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+body.light-theme .search-box {
+    background: var(--card-bg-light);
+    border-color: var(--border-light);
+    box-shadow: 0 20px 40px var(--shadow-light);
+}
+
+.search-box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, var(--primary), var(--accent));
+}
+
+.search-title {
+    font-size: 32px;
+    margin-bottom: 15px;
+    text-align: center;
+    background: linear-gradient(90deg, var(--text), var(--primary-light));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+body.light-theme .search-title {
+    background: linear-gradient(90deg, var(--text-light), var(--primary));
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.search-subtitle {
+    color: var(--text-secondary);
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 16px;
+}
+
+body.light-theme .search-subtitle {
+    color: var(--text-secondary-light);
+}
+
+.search-input-container {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.search-input {
+    width: 100%;
+    padding: 20px 60px 20px 30px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid var(--border);
+    border-radius: 15px;
+    color: var(--text);
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+body.light-theme .search-input {
+    background: rgba(0, 0, 0, 0.02);
+    border-color: var(--border-light);
+    color: var(--text-light);
+}
+
+.search-input:focus {
+    outline: none;
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(31, 107, 255, 0.1);
+}
+
+.search-icon {
+    position: absolute;
+    right: 25px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--primary);
+    font-size: 20px;
+}
+
+.search-filters {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.filter-btn {
+    padding: 12px 25px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid var(--border);
+    border-radius: 50px;
+    color: var(--text-secondary);
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+body.light-theme .filter-btn {
+    background: rgba(0, 0, 0, 0.02);
+    border-color: var(--border-light);
+    color: var(--text-secondary-light);
+}
+
+.filter-btn:hover, .filter-btn.active {
+    background: var(--primary);
+    color: white;
+    border-color: var(--primary);
+    transform: translateY(-3px);
+}
+
+/* ================= PRODUCTS GRID ================= */
+.products-grid-section {
+    padding: 100px 20px;
+    background: var(--bg);
+    position: relative;
+}
+
+body.light-theme .products-grid-section {
+    background: var(--bg-light);
+}
+
+.products-grid-container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.section-title {
+    font-size: 42px;
+    margin-bottom: 20px;
+    position: relative;
+    display: inline-block;
+    color: var(--text);
+}
+
+body.light-theme .section-title {
+    color: var(--text-light);
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(90deg, var(--primary), var(--accent));
+    border-radius: 10px;
+}
+
+.section-desc {
+    max-width: 700px;
+    color: var(--text-secondary);
+    font-size: 18px;
+    margin-top: 30px;
+}
+
+body.light-theme .section-desc {
+    color: var(--text-secondary-light);
+}
+
+.products-count {
+    margin-top: 50px;
+    color: var(--text-secondary);
+    font-size: 16px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--border);
+}
+
+body.light-theme .products-count {
+    color: var(--text-secondary-light);
+    border-color: var(--border-light);
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 40px;
+    margin-top: 50px;
+}
+
+.product-card {
+    background: var(--card-bg);
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid var(--border);
+    transition: all 0.4s ease;
+    position: relative;
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+body.light-theme .product-card {
+    background: var(--card-bg-light);
+    border-color: var(--border-light);
+}
+
+.product-card.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.product-card:hover {
+    transform: translateY(-15px);
+    border-color: var(--primary);
+    box-shadow: 0 30px 60px var(--shadow);
+}
+
+body.light-theme .product-card:hover {
+    box-shadow: 0 30px 60px var(--shadow-light);
+}
+
+.product-badge {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 8px 20px;
+    background: linear-gradient(90deg, var(--primary), var(--accent));
+    color: white;
+    border-radius: 50px;
+    font-size: 12px;
+    font-weight: 600;
+    z-index: 2;
+}
+
+.product-image {
+    height: 250px;
+    background: linear-gradient(135deg, rgba(31, 107, 255, 0.1), rgba(0, 212, 255, 0.1));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.product-image::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, transparent, rgba(31, 107, 255, 0.05));
+}
+
+.product-icon {
+    font-size: 80px;
+    color: var(--primary);
+    z-index: 1;
+}
+
+.product-content {
+    padding: 30px;
+}
+
+.product-category {
+    display: inline-block;
+    padding: 6px 15px;
+    background: rgba(31, 107, 255, 0.1);
+    color: var(--primary);
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.product-title {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: var(--text);
+}
+
+body.light-theme .product-title {
+    color: var(--text-light);
+}
+
+.product-description {
+    color: var(--text-secondary);
+    font-size: 15px;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+body.light-theme .product-description {
+    color: var(--text-secondary-light);
+}
+
+.product-features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.product-feature {
+    display: inline-block;
+    padding: 6px 12px;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 10px;
+    font-size: 12px;
+    color: var(--text-secondary);
+}
+
+body.light-theme .product-feature {
+    background: rgba(0, 0, 0, 0.02);
+    color: var(--text-secondary-light);
+}
+
+.product-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    border-top: 1px solid var(--border);
+}
+
+body.light-theme .product-footer {
+    border-color: var(--border-light);
+}
+
+.product-price {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--primary);
+}
+
+.product-btn {
+    padding: 10px 25px;
+    background: transparent;
+    border: 1px solid var(--primary);
+    color: var(--primary);
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.product-btn:hover {
+    background: var(--primary);
+    color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(31, 107, 255, 0.3);
+}
+
+/* ================= NO RESULTS ================= */
+.no-results {
+    text-align: center;
+    padding: 80px 20px;
+    display: none;
+}
+
+.no-results-icon {
+    font-size: 80px;
+    color: var(--primary);
+    margin-bottom: 30px;
+    opacity: 0.5;
+}
+
+.no-results h3 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: var(--text);
+}
+
+body.light-theme .no-results h3 {
+    color: var(--text-light);
+}
+
+.no-results p {
+    color: var(--text-secondary);
+    max-width: 500px;
+    margin: 0 auto 30px;
+}
+
+body.light-theme .no-results p {
+    color: var(--text-secondary-light);
+}
+
+/* ================= PREMIUM FOOTER ================= */
+.footer {
+    background: var(--section-bg);
+    padding: 100px 20px 40px;
+    border-top: 1px solid var(--border);
+    position: relative;
+}
+
+body.light-theme .footer {
+    background: var(--section-bg-light);
+    border-color: var(--border-light);
+}
+
+.footer-container {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 60px;
+    margin-bottom: 70px;
+}
+
+.footer-col h4 {
+    font-size: 22px;
+    margin-bottom: 30px;
+    position: relative;
+    padding-bottom: 15px;
+    color: var(--text);
+}
+
+body.light-theme .footer-col h4 {
+    color: var(--text-light);
+}
+
+.footer-col h4::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 3px;
+    background: linear-gradient(90deg, var(--primary), var(--accent));
+    border-radius: 10px;
+}
+
+.footer-logo {
+    font-size: 32px;
+    font-weight: 700;
+    background: linear-gradient(90deg, var(--text), var(--primary-light));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 25px;
+    display: inline-block;
+}
+
+body.light-theme .footer-logo {
+    background: linear-gradient(90deg, var(--text-light), var(--primary));
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.footer-description {
+    color: var(--text-secondary);
+    margin-bottom: 30px;
+    line-height: 1.8;
+}
+
+body.light-theme .footer-description {
+    color: var(--text-secondary-light);
+}
+
+.footer-social {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icon {
+    width: 45px;
+    height: 45px;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text);
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border: 1px solid var(--border);
+}
+
+body.light-theme .social-icon {
+    background: rgba(0, 0, 0, 0.02);
+    color: var(--text-light);
+    border-color: var(--border-light);
+}
+
+.social-icon:hover {
+    background: var(--primary);
+    color: white;
+    transform: translateY(-5px);
+    border-color: var(--primary);
+}
+
+.footer-links {
+    list-style: none;
+}
+
+.footer-links li {
+    margin-bottom: 18px;
+}
+
+.footer-links a {
+    color: var(--text-secondary);
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+body.light-theme .footer-links a {
+    color: var(--text-secondary-light);
+}
+
+.footer-links a:hover {
+    color: var(--primary);
+    transform: translateX(5px);
+}
+
+.footer-links a i {
+    font-size: 12px;
+    color: var(--primary);
+}
+
+.footer-bottom {
+    padding-top: 40px;
+    border-top: 1px solid var(--border);
+    text-align: center;
+    color: var(--text-secondary);
+    font-size: 14px;
+}
+
+body.light-theme .footer-bottom {
+    border-color: var(--border-light);
+    color: var(--text-secondary-light);
+}
+
+.footer-bottom p {
+    margin-bottom: 10px;
+}
+
+/* ================= ANIMATIONS ================= */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-up {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-up.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.slide-left {
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.slide-left.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.slide-right {
+    opacity: 0;
+    transform: translateX(50px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.slide-right.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 1100px) {
+    .theme-toggle-container {
+        top: 80px;
+        right: 20px;
+    }
+}
+
+@media (max-width: 900px) {
+    .nav-links {
+        position: fixed;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background: rgba(5, 7, 11, 0.95);
+        backdrop-filter: blur(20px);
+        flex-direction: column;
+        padding: 30px;
+        gap: 0;
+        transform: translateY(-100%);
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.4s ease;
+        border-bottom: 1px solid var(--border);
+    }
+    
+    body.light-theme .nav-links {
+        background: rgba(248, 250, 252, 0.95);
+        border-color: var(--border-light);
+    }
+    
+    .nav-links.active {
+        transform: translateY(0);
+        opacity: 1;
+        visibility: visible;
+    }
+    
+    .nav-link {
+        padding: 20px 0;
+        width: 100%;
+        text-align: center;
+        border-bottom: 1px solid var(--border);
+    }
+    
+    body.light-theme .nav-link {
+        border-color: var(--border-light);
+    }
+    
+    .nav-link:last-child {
+        border-bottom: none;
+    }
+    
+    .mobile-menu-btn {
+        display: block;
+    }
+    
+    .products-hero h1 {
+        font-size: clamp(36px, 6vw, 60px);
+    }
+    
+    .products-dynamic-text {
+        font-size: clamp(36px, 6vw, 60px);
+    }
+    
+    .section-title {
+        font-size: 36px;
+    }
+    
+    .products-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .footer-content {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 40px;
+    }
+}
+
+@media (max-width: 600px) {
+    .search-filters {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .filter-btn {
+        width: 100%;
+        max-width: 250px;
+        text-align: center;
+    }
+    
+    .search-box {
+        padding: 30px 20px;
+    }
+    
+    .footer {
+        padding: 70px 20px 30px;
+    }
+    
+    .product-features {
+        justify-content: center;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- Theme Toggle -->
+<div class="theme-toggle-container">
+    <div class="theme-toggle" id="themeToggle">
+        <div class="toggle-slider"></div>
+        <span class="toggle-icon"><i class="fas fa-moon"></i></span>
+        <span class="toggle-icon"><i class="fas fa-sun"></i></span>
+    </div>
+</div>
+
+<!-- Premium Header -->
+<header id="header">
+    <div class="header-container">
+        <a href="index.html" class="logo-container">
+            <div class="logo-icon">O</div>
+            <div class="logo">Orbi<span>cure</span></div>
+        </a>
+        
+        <button class="mobile-menu-btn" id="mobileMenuBtn">
+            <i class="fas fa-bars"></i>
+        </button>
+        
+        <div class="nav-links" id="navLinks">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="aboutus.html" class="nav-link">About Us</a>
+            <a href="products.html" class="nav-link active">Products</a>
+            <a href="index.html#innovation" class="nav-link">Innovation</a>
+            <a href="index.html#announcement" class="nav-link">Announcements</a>
+            <a href="index.html#contact" class="nav-link">Contact</a>
+            <button class="nav-btn">Get In Touch</button>
+        </div>
+    </div>
+</header>
+
+<!-- Products Hero -->
+<section class="products-hero" id="products-hero">
+    <div class="products-hero-bg"></div>
+    <div class="products-hero-glow"></div>
+    
+    <div class="products-hero-content">
+        <p class="products-hero-subtitle fade-up">Premium Pharmaceutical Solutions</p>
+        <h1 class="fade-up">
+            <div class="products-dynamic-text-container">
+                <div class="products-dynamic-text">
+                    <span>Innovative Products</span>
+                    <span>Premium Quality</span>
+                    <span>Healthcare Solutions</span>
+                    <span>Orbicure Excellence</span>
+                </div>
+            </div>
+            <br>For Modern Healthcare
+        </h1>
+        <p class="fade-up">
+            Discover Orbicure's premium range of pharmaceutical solutions, developed through 
+            cutting-edge research and uncompromising quality standards. Each product represents 
+            our commitment to advancing healthcare.
+        </p>
+    </div>
+</section>
+
+<!-- Search Section -->
+<section class="search-section">
+    <div class="search-container fade-up">
+        <div class="search-box">
+            <h2 class="search-title">Find Your Solution</h2>
+            <p class="search-subtitle">Search through our premium pharmaceutical products by name, category, or keyword</p>
+            
+            <div class="search-input-container">
+                <input type="text" class="search-input" id="searchInput" placeholder="Search products...">
+                <div class="search-icon">
+                    <i class="fas fa-search"></i>
+                </div>
+            </div>
+            
+            <div class="search-filters">
+                <button class="filter-btn active" data-filter="all">All Products</button>
+                <button class="filter-btn" data-filter="cardiology">Cardiology</button>
+                <button class="filter-btn" data-filter="neurology">Neurology</button>
+                <button class="filter-btn" data-filter="respiratory">Respiratory</button>
+                <button class="filter-btn" data-filter="immunology">Immunology</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Products Grid -->
+<section class="products-grid-section">
+    <div class="products-grid-container">
+        <h2 class="section-title slide-left">Our Premium Products</h2>
+        <p class="section-desc slide-left">
+            Explore our curated selection of premium pharmaceutical solutions, each developed 
+            through rigorous research and quality assurance processes.
+        </p>
+        
+        <div class="products-count" id="productsCount">
+            Showing <span id="visibleCount">0</span> of <span id="totalCount">0</span> products
+        </div>
+        
+        <div class="products-grid" id="productsGrid">
+            <!-- Products will be dynamically loaded here -->
+        </div>
+        
+        <div class="no-results" id="noResults">
+            <div class="no-results-icon">
+                <i class="fas fa-search"></i>
+            </div>
+            <h3>No Products Found</h3>
+            <p>We couldn't find any products matching your search. Try adjusting your search terms or filters.</p>
+            <button class="nav-btn" id="clearSearch">Clear Search</button>
+        </div>
+    </div>
+</section>
+
+<!-- Premium Footer -->
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-content">
+            <div class="footer-col">
+                <div class="footer-logo">Orbicure</div>
+                <p class="footer-description">
+                    Leading the way in premium pharmaceutical solutions with innovation, 
+                    integrity, and a commitment to improving global health standards.
+                </p>
+                <div class="footer-social">
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+                    <li><a href="index.html#about"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                    <li><a href="products.html"><i class="fas fa-chevron-right"></i> Products</a></li>
+                    <li><a href="index.html#innovation"><i class="fas fa-chevron-right"></i> Innovation</a></li>
+                    <li><a href="index.html#announcement"><i class="fas fa-chevron-right"></i> Announcements</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-col">
+                <h4>Our Products</h4>
+                <ul class="footer-links">
+                    <li><a href="#" data-filter="cardiology"><i class="fas fa-chevron-right"></i> Cardiology</a></li>
+                    <li><a href="#" data-filter="neurology"><i class="fas fa-chevron-right"></i> Neurology</a></li>
+                    <li><a href="#" data-filter="respiratory"><i class="fas fa-chevron-right"></i> Respiratory</a></li>
+                    <li><a href="#" data-filter="immunology"><i class="fas fa-chevron-right"></i> Immunology</a></li>
+                    <li><a href="#" data-filter="all"><i class="fas fa-chevron-right"></i> All Products</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-col">
+                <h4>Contact Info</h4>
+                <ul class="footer-links">
+                    <li><a href="#"><i class="fas fa-map-marker-alt"></i> Islamabad, Pakistan</a></li>
+                    <li><a href="tel:03362631125"><i class="fas fa-phone"></i> 0336 2631125</a></li>
+                    <li><a href="mailto:info@orbicure.com"><i class="fas fa-envelope"></i> info@orbicure.com</a></li>
+                    <li><a href="#"><i class="fas fa-clock"></i> Mon-Fri: 9AM - 6PM</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>© 2026 Orbicure Pvt Ltd. All Rights Reserved. | Premium Pharmaceutical Solutions</p>
+            <p>Islamabad, Pakistan | Phone: 0336 2631125</p>
+        </div>
+    </div>
+</footer>
+
+<script>
+// Theme Toggle
+const themeToggle = document.getElementById('themeToggle');
+const body = document.body;
+
+// Check for saved theme or prefer-color-scheme
+const savedTheme = localStorage.getItem('orbicure-theme');
+const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+if (savedTheme === 'light' || (!savedTheme && !prefersDark)) {
+    body.classList.add('light-theme');
+}
+
+themeToggle.addEventListener('click', () => {
+    body.classList.toggle('light-theme');
+    
+    // Save preference
+    if (body.classList.contains('light-theme')) {
+        localStorage.setItem('orbicure-theme', 'light');
+    } else {
+        localStorage.setItem('orbicure-theme', 'dark');
+    }
+});
+
+// Mobile Menu Toggle
+const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+const navLinks = document.getElementById('navLinks');
+
+mobileMenuBtn.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+    mobileMenuBtn.innerHTML = navLinks.classList.contains('active') 
+        ? '<i class="fas fa-times"></i>' 
+        : '<i class="fas fa-bars"></i>';
+});
+
+// Close mobile menu when clicking a link
+document.querySelectorAll('.nav-link').forEach(link => {
+    link.addEventListener('click', () => {
+        navLinks.classList.remove('active');
+        mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
+    });
+});
+
+// Header scroll effect
+const header = document.getElementById('header');
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 100) {
+        header.style.padding = '0';
+        header.style.backdropFilter = 'blur(20px)';
+    } else {
+        header.style.padding = '';
+        header.style.backdropFilter = 'blur(20px)';
+    }
+});
+
+// Product Data - In a real app, this would come from an API
+const products = [
+    {
+        id: 1,
+        name: "DenPro",
+        category: "cardiology",
+        description: "Advanced cardiovascular treatment with enhanced efficacy for comprehensive heart health management and hypertension control.",
+        price: "1000 PKR",
+        badge: "Featured",
+        icon: "fas fa-heart",
+        features: ["Hypertension Control", "Cardiac Protection", "24hr Efficacy", "Minimal Side Effects"]
+    },
+    {
+        id: 2,
+        name: "SOON",
+        category: "neurology",
+        description: "Next-generation neurological support formula designed to enhance cognitive function and provide neural protection.",
+        price: "SOON",
+        badge: "Soon",
+        icon: "fas fa-brain",
+        features: ["Cognitive Enhancement", "Neural Protection", "Memory Support", "Fast Acting"]
+    },
+];
+
+// DOM Elements
+const productsGrid = document.getElementById('productsGrid');
+const searchInput = document.getElementById('searchInput');
+const filterBtns = document.querySelectorAll('.filter-btn');
+const productsCount = document.getElementById('productsCount');
+const visibleCount = document.getElementById('visibleCount');
+const totalCount = document.getElementById('totalCount');
+const noResults = document.getElementById('noResults');
+const clearSearch = document.getElementById('clearSearch');
+
+// Initialize
+let currentFilter = 'all';
+let currentSearch = '';
+
+// Render products
+function renderProducts() {
+    productsGrid.innerHTML = '';
+    
+    // Filter products
+    const filteredProducts = products.filter(product => {
+        // Apply category filter
+        if (currentFilter !== 'all' && product.category !== currentFilter) {
+            return false;
+        }
+        
+        // Apply search filter
+        if (currentSearch) {
+            const searchTerm = currentSearch.toLowerCase();
+            const productName = product.name.toLowerCase();
+            const productDesc = product.description.toLowerCase();
+            const productCategory = product.category.toLowerCase();
+            
+            if (!productName.includes(searchTerm) && 
+                !productDesc.includes(searchTerm) && 
+                !productCategory.includes(searchTerm)) {
+                return false;
+            }
+        }
+        
+        return true;
+    });
+    
+    // Update counts
+    totalCount.textContent = products.length;
+    visibleCount.textContent = filteredProducts.length;
+    
+    // Show/hide no results
+    if (filteredProducts.length === 0) {
+        noResults.style.display = 'block';
+        productsCount.style.display = 'none';
+    } else {
+        noResults.style.display = 'none';
+        productsCount.style.display = 'block';
+    }
+    
+    // Render products with animation delay
+filteredProducts.forEach((product, index) => {
+    const productCard = document.createElement('div');
+    productCard.className = 'product-card';
+    productCard.style.transitionDelay = `${index * 0.1}s`;
+    
+    productCard.innerHTML = `
+        ${product.badge ? `<div class="product-badge">${product.badge}</div>` : ''}
+        <div class="product-image">
+            <i class="${product.icon} product-icon"></i>
+        </div>
+        <div class="product-content">
+            <span class="product-category">
+                ${product.category.charAt(0).toUpperCase() + product.category.slice(1)}
+            </span>
+            <h3 class="product-title">${product.name}</h3>
+            <p class="product-description">${product.description}</p>
+            <div class="product-features">
+                ${product.features.map(feature => `<span class="product-feature">${feature}</span>`).join('')}
+            </div>
+            <div class="product-footer">
+                <div class="product-price">${product.price}</div>
+                <button class="product-btn" data-product-id="${product.id}">
+                    <i class="fas fa-eye"></i> View Details
+                </button>
+            </div>
+        </div>
+    `;
+    
+    productsGrid.appendChild(productCard);
+
+    // Add click event for product button
+    const viewBtn = productCard.querySelector('.product-btn');
+    viewBtn.addEventListener('click', () => {
+        if (product.id === 1) {
+            window.location.href = "Denpro.html";
+        }
+    });
+});
+
+const viewBtn = productCard.querySelector('.product-btn'); viewBtn.addEventListener('click', () => { // For Den Pro, we'll create a special page later if (product.id === 1) { alert(Opening Den Pro product page...\n\nThis will be implemented as a separate detailed product page.); } else { alert(Viewing details for ${product.name}\n\nPrice: ${product.price}\nCategory: ${product.category}\n\nThis will open a detailed product page in the next implementation phase.); } }); });
+    
+    // Animate cards
+    setTimeout(() => {
+        const cards = document.querySelectorAll('.product-card');
+        cards.forEach(card => {
+            card.classList.add('show');
+        });
+    }, 100);
+}
+
+// Search functionality
+searchInput.addEventListener('input', (e) => {
+    currentSearch = e.target.value.trim();
+    renderProducts();
+});
+
+// Filter functionality
+filterBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+        // Update active button
+        filterBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        
+        // Update filter
+        currentFilter = btn.getAttribute('data-filter');
+        renderProducts();
+    });
+});
+
+// Clear search
+clearSearch.addEventListener('click', () => {
+    searchInput.value = '';
+    currentSearch = '';
+    filterBtns.forEach(b => b.classList.remove('active'));
+    document.querySelector('.filter-btn[data-filter="all"]').classList.add('active');
+    currentFilter = 'all';
+    renderProducts();
+});
+
+// Footer filter links
+document.querySelectorAll('.footer-links a[data-filter]').forEach(link => {
+    link.addEventListener('click', (e) => {
+        e.preventDefault();
+        const filter = link.getAttribute('data-filter');
+        
+        // Update active button
+        filterBtns.forEach(b => b.classList.remove('active'));
+        document.querySelector(`.filter-btn[data-filter="${filter}"]`).classList.add('active');
+        
+        // Update filter
+        currentFilter = filter;
+        renderProducts();
+        
+        // Scroll to products
+        document.querySelector('.products-grid-section').scrollIntoView({ 
+            behavior: 'smooth',
+            block: 'start'
+        });
+    });
+});
+
+// Nav button
+document.querySelector('.nav-btn').addEventListener('click', () => {
+    document.querySelector('.footer').scrollIntoView({ behavior: 'smooth' });
+});
+
+// Enhanced scroll animations
+const fadeElements = document.querySelectorAll('.fade-up, .slide-left, .slide-right');
+
+const animateOnScroll = () => {
+    fadeElements.forEach(element => {
+        const elementTop = element.getBoundingClientRect().top;
+        const windowHeight = window.innerHeight;
+        
+        if (elementTop < windowHeight - 100) {
+            element.classList.add('show');
+        }
+    });
+};
+
+// Initial check
+animateOnScroll();
+
+// Check on scroll with throttle for performance
+let ticking = false;
+window.addEventListener('scroll', () => {
+    if (!ticking) {
+        window.requestAnimationFrame(() => {
+            animateOnScroll();
+            ticking = false;
+        });
+        ticking = true;
+    }
+});
+
+// Smooth scrolling for anchor links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        
+        const targetId = this.getAttribute('href');
+        if (targetId === '#') return;
+        
+        const targetElement = document.querySelector(targetId);
+        if (targetElement) {
+            window.scrollTo({
+                top: targetElement.offsetTop - 80,
+                behavior: 'smooth'
+            });
+        }
+    });
+});
+
+// Parallax effect for hero glow
+window.addEventListener('scroll', () => {
+    const scrolled = window.pageYOffset;
+    const heroGlow = document.querySelector('.products-hero-glow');
+    
+    if (heroGlow) {
+        heroGlow.style.transform = `translate(-50%, calc(-50% + ${scrolled * 0.1}px))`;
+    }
+});
+
+// Initialize
+renderProducts();
+</script>
+
+</body>
+</html>

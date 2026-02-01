@@ -1,0 +1,1570 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- SEO -->
+<title>DenPro | Danshen Compound Capsules | Orbicure Premium Cardio Support | Pakistan</title>
+<meta name="description" content="DenPro Danshen Compound Capsules: Premium herbal cardio-protective formula supporting heart health and blood circulation. Manufactured by Orbit Naturals, a DR&F licensed company in Pakistan.">
+<meta name="keywords" content="DenPro, Danshen Compound Capsules, Heart Health, Blood Circulation, Cardio Support, Herbal Medicine, Orbit Naturals, Pakistan Pharma">
+<meta name="author" content="Orbicure Pvt Ltd">
+<meta name="robots" content="index, follow">
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<style>
+:root {
+    --bg: #05070b;
+    --card-bg: #0b1225;
+    --section-bg: #070a15;
+    --text: #ffffff;
+    --text-secondary: #b0b0b0;
+    --primary: #1f6bff;
+    --primary-light: #5fa8ff;
+    --accent: #00d4ff;
+    --accent-glow: rgba(0, 212, 255, 0.2);
+    --gold: #ffd700;
+    --border: rgba(255, 255, 255, 0.08);
+    --shadow: rgba(0, 0, 0, 0.5);
+    
+    /* Light theme variables - will be toggled via JS */
+    --bg-light: #f8fafc;
+    --card-bg-light: #ffffff;
+    --section-bg-light: #f1f5f9;
+    --text-light: #1e293b;
+    --text-secondary-light: #64748b;
+    --border-light: rgba(0, 0, 0, 0.08);
+    --shadow-light: rgba(0, 0, 0, 0.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    transition: background-color 0.5s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+body {
+    background: var(--bg);
+    color: var(--text);
+    overflow-x: hidden;
+    line-height: 1.6;
+    transition: background-color 0.5s ease;
+}
+
+body.light-theme {
+    background: var(--bg-light);
+    color: var(--text-light);
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+h1, .section-title {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+}
+
+/* ================= THEME TOGGLE ================= */
+.theme-toggle-container {
+    position: fixed;
+    top: 100px;
+    right: 30px;
+    z-index: 999;
+}
+
+.theme-toggle {
+    width: 60px;
+    height: 30px;
+    background: var(--card-bg);
+    border-radius: 50px;
+    border: 1px solid var(--border);
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 8px;
+    transition: all 0.3s ease;
+}
+
+body.light-theme .theme-toggle {
+    background: var(--card-bg-light);
+    border-color: var(--border-light);
+}
+
+.toggle-icon {
+    font-size: 14px;
+    color: var(--text);
+    transition: all 0.3s ease;
+}
+
+body.light-theme .toggle-icon {
+    color: var(--text-light);
+}
+
+.toggle-slider {
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    background: linear-gradient(135deg, var(--primary), var(--accent));
+    border-radius: 50%;
+    top: 3px;
+    left: 5px;
+    transition: transform 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+    box-shadow: 0 2px 5px var(--shadow);
+}
+
+body.light-theme .toggle-slider {
+    transform: translateX(30px);
+}
+
+/* ================= PREMIUM HEADER ================= */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    backdrop-filter: blur(20px);
+    background: rgba(5, 7, 11, 0.85);
+    border-bottom: 1px solid var(--border);
+    padding: 0;
+    transition: all 0.4s ease;
+}
+
+body.light-theme header {
+    background: rgba(248, 250, 252, 0.9);
+    border-bottom-color: var(--border-light);
+}
+
+.header-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 20px 0;
+    text-decoration: none;
+}
+
+.logo-icon {
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, var(--primary), var(--accent));
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 22px;
+    color: white;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.5s ease;
+}
+
+.logo-icon::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, transparent, rgba(255, 255, 255, 0.2));
+}
+
+.logo-container:hover .logo-icon {
+    transform: rotate(15deg) scale(1.1);
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    background: linear-gradient(90deg, var(--text), var(--primary-light));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+body.light-theme .logo {
+    background: linear-gradient(90deg, var(--text-light), var(--primary));
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.logo span {
+    color: var(--primary);
+}
+
+.nav-links {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.nav-link {
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    position: relative;
+    padding: 25px 0;
+    transition: color 0.3s ease;
+}
+
+body.light-theme .nav-link {
+    color: var(--text-secondary-light);
+}
+
+.nav-link:hover {
+    color: var(--text);
+}
+
+body.light-theme .nav-link:hover {
+    color: var(--text-light);
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--primary), var(--accent));
+    border-radius: 10px;
+    transition: width 0.4s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.nav-btn {
+    padding: 12px 28px;
+    border-radius: 50px;
+    border: 1px solid var(--primary);
+    color: var(--primary);
+    background: transparent;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    transition: all 0.4s ease;
+    margin-left: 10px;
+}
+
+.nav-btn:hover {
+    background: var(--primary);
+    color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(31, 107, 255, 0.3);
+}
+
+.mobile-menu-btn {
+    display: none;
+    background: transparent;
+    border: none;
+    color: var(--text);
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+body.light-theme .mobile-menu-btn {
+    color: var(--text-light);
+}
+
+/* ================= PRODUCT HERO ================= */
+.product-hero {
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    padding: 160px 20px 60px;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(135deg, rgba(11, 18, 37, 0.9), rgba(7, 10, 21, 0.9));
+}
+
+body.light-theme .product-hero {
+    background: linear-gradient(135deg, rgba(241, 245, 249, 0.9), rgba(248, 250, 252, 0.9));
+}
+
+.product-hero-bg {
+    position: absolute;
+    inset: 0;
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><rect width="100" height="100" fill="%230b1225"/><path d="M0,50 Q25,25 50,50 T100,50" stroke="%231f6bff" stroke-width="0.5" fill="none"/><path d="M0,30 Q25,5 50,30 T100,30" stroke="%2300d4ff" stroke-width="0.3" fill="none" opacity="0.7"/></svg>');
+    background-size: 200px;
+    opacity: 0.5;
+    z-index: 1;
+}
+
+body.light-theme .product-hero-bg {
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><rect width="100" height="100" fill="%23f1f5f9"/><path d="M0,50 Q25,25 50,50 T100,50" stroke="%231f6bff" stroke-width="0.5" fill="none"/><path d="M0,30 Q25,5 50,30 T100,30" stroke="%2300d4ff" stroke-width="0.3" fill="none" opacity="0.7"/></svg>');
+    background-size: 200px;
+}
+
+.product-hero-glow {
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(198, 40, 40, 0.15) 0%, transparent 70%);
+    border-radius: 50%;
+    top: 50%;
+    right: 10%;
+    transform: translateY(-50%);
+    z-index: 1;
+    animation: pulseGlow 8s infinite alternate ease-in-out;
+}
+
+.product-hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+}
+
+.product-image-container {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5);
+    height: 500px;
+    background: linear-gradient(135deg, #0b1225, #070a15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+}
+
+body.light-theme .product-image-container {
+    box-shadow: 0 30px 60px var(--shadow-light);
+    background: linear-gradient(135deg, #f1f5f9, #ffffff);
+}
+
+.product-image-container img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    border-radius: 10px;
+    transition: transform 0.5s ease;
+    z-index: 2;
+    position: relative;
+}
+
+.product-image-container img:hover {
+    transform: scale(1.05);
+}
+
+.product-image-container::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at 70% 30%, rgba(198, 40, 40, 0.1) 0%, transparent 50%);
+    z-index: 1;
+}
+
+.product-badge {
+    display: inline-block;
+    padding: 8px 20px;
+    background: linear-gradient(90deg, #c62828, #ff5252);
+    color: white;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+.product-title {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 20px;
+    background: linear-gradient(90deg, var(--text), #ff5252);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+body.light-theme .product-title {
+    background: linear-gradient(90deg, var(--text-light), #c62828);
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.product-subtitle {
+    font-size: 20px;
+    color: var(--text-secondary);
+    margin-bottom: 30px;
+    font-weight: 500;
+}
+
+body.light-theme .product-subtitle {
+    color: var(--text-secondary-light);
+}
+
+.product-tagline {
+    font-size: 18px;
+    color: var(--primary-light);
+    font-weight: 600;
+    margin-bottom: 40px;
+    padding: 20px;
+    background: rgba(31, 107, 255, 0.1);
+    border-radius: 10px;
+    border-left: 4px solid var(--primary);
+}
+
+.product-hero-buttons {
+    display: flex;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.product-hero-btn {
+    padding: 16px 35px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    border: none;
+}
+
+.product-hero-btn-primary {
+    background: linear-gradient(90deg, #c62828, #ff5252);
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.product-hero-btn-primary:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(198, 40, 40, 0.4);
+}
+
+.product-hero-btn-secondary {
+    background: transparent;
+    color: var(--text);
+    border: 2px solid var(--border);
+}
+
+body.light-theme .product-hero-btn-secondary {
+    color: var(--text-light);
+    border-color: var(--border-light);
+}
+
+.product-hero-btn-secondary:hover {
+    background: rgba(255, 255, 255, 0.05);
+    border-color: #c62828;
+    transform: translateY(-5px);
+}
+
+body.light-theme .product-hero-btn-secondary:hover {
+    background: rgba(0, 0, 0, 0.02);
+}
+
+/* ================= PRODUCT INFO SECTION ================= */
+.product-info {
+    padding: 100px 20px;
+    background: var(--section-bg);
+    position: relative;
+}
+
+body.light-theme .product-info {
+    background: var(--section-bg-light);
+}
+
+.product-info-container {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.section-title {
+    font-size: 42px;
+    margin-bottom: 20px;
+    position: relative;
+    display: inline-block;
+    color: var(--text);
+}
+
+body.light-theme .section-title {
+    color: var(--text-light);
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(90deg, var(--primary), var(--accent));
+    border-radius: 10px;
+}
+
+.section-desc {
+    max-width: 700px;
+    color: var(--text-secondary);
+    font-size: 18px;
+    margin-top: 30px;
+    margin-bottom: 70px;
+}
+
+body.light-theme .section-desc {
+    color: var(--text-secondary-light);
+}
+
+.product-info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    margin-top: 50px;
+}
+
+.info-card {
+    background: var(--card-bg);
+    border-radius: 20px;
+    padding: 40px;
+    border: 1px solid var(--border);
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+body.light-theme .info-card {
+    background: var(--card-bg-light);
+    border-color: var(--border-light);
+}
+
+.info-card:hover {
+    transform: translateY(-10px);
+    border-color: var(--primary);
+    box-shadow: 0 20px 40px var(--shadow);
+}
+
+body.light-theme .info-card:hover {
+    box-shadow: 0 20px 40px var(--shadow-light);
+}
+
+.info-card-icon {
+    width: 70px;
+    height: 70px;
+    background: rgba(198, 40, 40, 0.1);
+    border-radius: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+    color: #c62828;
+    font-size: 28px;
+}
+
+.info-card h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: var(--text);
+}
+
+body.light-theme .info-card h3 {
+    color: var(--text-light);
+}
+
+.info-card p {
+    color: var(--text-secondary);
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+body.light-theme .info-card p {
+    color: var(--text-secondary-light);
+}
+
+.info-list {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.info-list li {
+    padding: 12px 0;
+    border-bottom: 1px solid var(--border);
+    color: var(--text-secondary);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+body.light-theme .info-list li {
+    border-color: var(--border-light);
+    color: var(--text-secondary-light);
+}
+
+.info-list li:last-child {
+    border-bottom: none;
+}
+
+.info-list li i {
+    color: #c62828;
+    font-size: 14px;
+}
+
+/* ================= INDICATIONS SECTION ================= */
+.indications {
+    padding: 100px 20px;
+    background: var(--bg);
+    position: relative;
+}
+
+body.light-theme .indications {
+    background: var(--bg-light);
+}
+
+.indications-container {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.indications-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 70px;
+}
+
+.indication-card {
+    background: var(--card-bg);
+    border-radius: 15px;
+    padding: 35px;
+    border: 1px solid var(--border);
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+body.light-theme .indication-card {
+    background: var(--card-bg-light);
+    border-color: var(--border-light);
+}
+
+.indication-card:hover {
+    transform: translateY(-8px);
+    border-color: #c62828;
+}
+
+.indication-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 6px;
+    height: 100%;
+    background: linear-gradient(to bottom, #c62828, #ff5252);
+}
+
+.indication-card h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: var(--text);
+    padding-left: 15px;
+}
+
+body.light-theme .indication-card h3 {
+    color: var(--text-light);
+}
+
+.indication-card p {
+    color: var(--text-secondary);
+    line-height: 1.7;
+    padding-left: 15px;
+}
+
+body.light-theme .indication-card p {
+    color: var(--text-secondary-light);
+}
+
+/* ================= SPECIFICATIONS SECTION ================= */
+.specifications {
+    padding: 100px 20px;
+    background: linear-gradient(135deg, rgba(11, 18, 37, 0.9), rgba(7, 10, 21, 0.9));
+    position: relative;
+}
+
+body.light-theme .specifications {
+    background: linear-gradient(135deg, rgba(241, 245, 249, 0.9), rgba(248, 250, 252, 0.9));
+}
+
+.specifications-container {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.specs-table {
+    background: var(--card-bg);
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid var(--border);
+    margin-top: 70px;
+}
+
+body.light-theme .specs-table {
+    background: var(--card-bg-light);
+    border-color: var(--border-light);
+}
+
+.spec-row {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    border-bottom: 1px solid var(--border);
+}
+
+body.light-theme .spec-row {
+    border-color: var(--border-light);
+}
+
+.spec-row:last-child {
+    border-bottom: none;
+}
+
+.spec-header {
+    background: rgba(31, 107, 255, 0.1);
+    padding: 25px 30px;
+    font-weight: 600;
+    color: var(--primary);
+}
+
+body.light-theme .spec-header {
+    background: rgba(31, 107, 255, 0.05);
+}
+
+.spec-value {
+    padding: 25px 30px;
+    color: var(--text-secondary);
+}
+
+body.light-theme .spec-value {
+    color: var(--text-secondary-light);
+}
+
+.spec-highlight {
+    color: var(--primary-light);
+    font-weight: 500;
+}
+
+body.light-theme .spec-highlight {
+    color: var(--primary);
+}
+
+.warning-note {
+    background: rgba(198, 40, 40, 0.1);
+    padding: 25px 30px;
+    border-radius: 15px;
+    margin-top: 50px;
+    border-left: 4px solid #c62828;
+}
+
+.warning-note h4 {
+    color: #c62828;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.warning-note p {
+    color: var(--text-secondary);
+    line-height: 1.7;
+}
+
+body.light-theme .warning-note p {
+    color: var(--text-secondary-light);
+}
+
+/* ================= PREMIUM FOOTER ================= */
+.footer {
+    background: var(--section-bg);
+    padding: 100px 20px 40px;
+    border-top: 1px solid var(--border);
+    position: relative;
+}
+
+body.light-theme .footer {
+    background: var(--section-bg-light);
+    border-color: var(--border-light);
+}
+
+.footer-container {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 60px;
+    margin-bottom: 70px;
+}
+
+.footer-col h4 {
+    font-size: 22px;
+    margin-bottom: 30px;
+    position: relative;
+    padding-bottom: 15px;
+    color: var(--text);
+}
+
+body.light-theme .footer-col h4 {
+    color: var(--text-light);
+}
+
+.footer-col h4::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 3px;
+    background: linear-gradient(90deg, var(--primary), var(--accent));
+    border-radius: 10px;
+}
+
+.footer-logo {
+    font-size: 32px;
+    font-weight: 700;
+    background: linear-gradient(90deg, var(--text), var(--primary-light));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 25px;
+    display: inline-block;
+}
+
+body.light-theme .footer-logo {
+    background: linear-gradient(90deg, var(--text-light), var(--primary));
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.footer-description {
+    color: var(--text-secondary);
+    margin-bottom: 30px;
+    line-height: 1.8;
+}
+
+body.light-theme .footer-description {
+    color: var(--text-secondary-light);
+}
+
+.footer-social {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icon {
+    width: 45px;
+    height: 45px;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text);
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border: 1px solid var(--border);
+}
+
+body.light-theme .social-icon {
+    background: rgba(0, 0, 0, 0.02);
+    color: var(--text-light);
+    border-color: var(--border-light);
+}
+
+.social-icon:hover {
+    background: var(--primary);
+    color: white;
+    transform: translateY(-5px);
+    border-color: var(--primary);
+}
+
+.footer-links {
+    list-style: none;
+}
+
+.footer-links li {
+    margin-bottom: 18px;
+}
+
+.footer-links a {
+    color: var(--text-secondary);
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+body.light-theme .footer-links a {
+    color: var(--text-secondary-light);
+}
+
+.footer-links a:hover {
+    color: var(--primary);
+    transform: translateX(5px);
+}
+
+.footer-links a i {
+    font-size: 12px;
+    color: var(--primary);
+}
+
+.footer-bottom {
+    padding-top: 40px;
+    border-top: 1px solid var(--border);
+    text-align: center;
+    color: var(--text-secondary);
+    font-size: 14px;
+}
+
+body.light-theme .footer-bottom {
+    border-color: var(--border-light);
+    color: var(--text-secondary-light);
+}
+
+.footer-bottom p {
+    margin-bottom: 10px;
+}
+
+/* ================= ANIMATIONS ================= */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes pulseGlow {
+    0% { opacity: 0.5; transform: translateY(-50%) scale(1); }
+    100% { opacity: 0.8; transform: translateY(-50%) scale(1.1); }
+}
+
+/* Enhanced fade-in with slide effects */
+.fade-up {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-up.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Slide in from left */
+.slide-left {
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.slide-left.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Slide in from right */
+.slide-right {
+    opacity: 0;
+    transform: translateX(50px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.slide-right.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 1100px) {
+    .product-hero-content {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+    
+    .product-image-container {
+        height: 400px;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    
+    .theme-toggle-container {
+        top: 80px;
+        right: 20px;
+    }
+}
+
+@media (max-width: 900px) {
+    .nav-links {
+        position: fixed;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background: rgba(5, 7, 11, 0.95);
+        backdrop-filter: blur(20px);
+        flex-direction: column;
+        padding: 30px;
+        gap: 0;
+        transform: translateY(-100%);
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.4s ease;
+        border-bottom: 1px solid var(--border);
+    }
+    
+    body.light-theme .nav-links {
+        background: rgba(248, 250, 252, 0.95);
+        border-color: var(--border-light);
+    }
+    
+    .nav-links.active {
+        transform: translateY(0);
+        opacity: 1;
+        visibility: visible;
+    }
+    
+    .nav-link {
+        padding: 20px 0;
+        width: 100%;
+        text-align: center;
+        border-bottom: 1px solid var(--border);
+    }
+    
+    body.light-theme .nav-link {
+        border-color: var(--border-light);
+    }
+    
+    .nav-link:last-child {
+        border-bottom: none;
+    }
+    
+    .mobile-menu-btn {
+        display: block;
+    }
+    
+    .product-title {
+        font-size: 36px;
+    }
+    
+    .section-title {
+        font-size: 36px;
+    }
+    
+    .product-hero-buttons {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .product-hero-btn {
+        width: 100%;
+        max-width: 300px;
+        justify-content: center;
+    }
+    
+    .footer-content {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 40px;
+    }
+}
+
+@media (max-width: 600px) {
+    .product-info-grid, .indications-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .spec-row {
+        grid-template-columns: 1fr;
+    }
+    
+    .spec-header, .spec-value {
+        padding: 20px;
+    }
+    
+    .info-card, .indication-card {
+        padding: 30px;
+    }
+    
+    .product-image-container {
+        height: 300px;
+        padding: 20px;
+    }
+    
+    .footer {
+        padding: 70px 20px 30px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- Theme Toggle -->
+<div class="theme-toggle-container">
+    <div class="theme-toggle" id="themeToggle">
+        <div class="toggle-slider"></div>
+        <span class="toggle-icon"><i class="fas fa-moon"></i></span>
+        <span class="toggle-icon"><i class="fas fa-sun"></i></span>
+    </div>
+</div>
+
+<!-- Premium Header -->
+<header id="header">
+    <div class="header-container">
+        <a href="/" class="logo-container">
+            <div class="logo-icon">O</div>
+            <div class="logo">Orbi<span>cure</span></div>
+        </a>
+        
+        <button class="mobile-menu-btn" id="mobileMenuBtn">
+            <i class="fas fa-bars"></i>
+        </button>
+        
+         <div class="nav-links" id="navLinks">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="Aboutus.html" class="nav-link">About Us</a>
+            <a href="products.html" class="nav-link">Products</a>
+            <a href="#announcement" class="nav-link">Announcements</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+            <button class="nav-btn">Get In Touch</button>
+        </div>
+        </div>
+    </div>
+</header>
+
+<!-- Product Hero Section -->
+<section class="product-hero" id="home">
+    <div class="product-hero-bg"></div>
+    <div class="product-hero-glow"></div>
+    
+    <div class="product-hero-content">
+        <div class="product-image-container slide-left">
+            <a href="https://ibb.co/vvkYLnX8"><img src="https://i.ibb.co/tPDXYrL5/Untitled-design.png" alt="DenPro Danshen Compound Capsules" border="0"></a>
+        </div>
+        
+        <div class="slide-right">
+            <span class="product-badge fade-up">Herbal Cardio-Protective Formula™</span>
+            <h1 class="product-title fade-up">DenPro Danshen Compound Capsules</h1>
+            <h2 class="product-subtitle fade-up">Supports Heart Health & Blood Circulation • 250 mg per capsule</h2>
+            
+            <div class="product-tagline fade-up">
+                <i class="fas fa-heartbeat"></i> Premium herbal formulation designed to improve microcirculation and support cardiovascular health
+            </div>
+            
+            <p class="fade-up" style="color: var(--text-secondary); margin-bottom: 30px;">
+                DenPro Danshen Compound Capsules feature a proprietary herbal blend manufactured by Orbit Naturals, 
+                a DR&F licensed herbal and nutraceutical company based in Pakistan. This alternative medicine product 
+                combines traditional herbal knowledge with modern manufacturing standards.
+            </p>
+            
+            <div class="product-hero-buttons fade-up">
+                <button class="product-hero-btn product-hero-btn-primary" id="buyNowBtn">
+                    <i class="fas fa-shopping-cart"></i> Inquire About Product
+                </button>
+                <button class="product-hero-btn product-hero-btn-secondary" id="learnMoreBtn">
+                    <i class="fas fa-book-medical"></i> Learn More
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Product Info Section -->
+<section class="product-info" id="info">
+    <div class="product-info-container">
+        <h2 class="section-title slide-left">Product Information</h2>
+        <p class="section-desc slide-left">
+            DenPro Danshen Compound Capsules are formulated using premium herbal ingredients to provide
+            comprehensive cardiovascular support through improved microcirculation and blood flow.
+        </p>
+        
+        <div class="product-info-grid">
+            <div class="info-card slide-left">
+                <div class="info-card-icon">
+                    <i class="fas fa-heart"></i>
+                </div>
+                <h3>Cardiovascular Support</h3>
+                <p>Specially formulated to support heart health and improve overall cardiovascular function through traditional herbal ingredients.</p>
+                
+                <ul class="info-list">
+                    <li><i class="fas fa-check"></i> Supports healthy blood circulation</li>
+                    <li><i class="fas fa-check"></i> Promotes heart muscle function</li>
+                    <li><i class="fas fa-check"></i> Enhances vascular health</li>
+                </ul>
+            </div>
+            
+            <div class="info-card fade-up">
+                <div class="info-card-icon">
+                    <i class="fas fa-tint"></i>
+                </div>
+                <h3>Microcirculation Enhancement</h3>
+                <p>Improves blood flow in the smallest blood vessels, supporting oxygen and nutrient delivery throughout the body.</p>
+                
+                <ul class="info-list">
+                    <li><i class="fas fa-check"></i> Enhances capillary function</li>
+                    <li><i class="fas fa-check"></i> Improves peripheral circulation</li>
+                    <li><i class="fas fa-check"></i> Supports tissue oxygenation</li>
+                </ul>
+            </div>
+            
+            <div class="info-card slide-right">
+                <div class="info-card-icon">
+                    <i class="fas fa-industry"></i>
+                </div>
+                <h3>Quality Manufacturing</h3>
+                <p>Produced by Orbit Naturals in Pakistan, a DR&F licensed herbal and nutraceutical company following strict quality standards.</p>
+                
+                <ul class="info-list">
+                    <li><i class="fas fa-check"></i> DR&F Licensed Manufacturer</li>
+                    <li><i class="fas fa-check"></i> Herbal & Nutraceutical Specialists</li>
+                    <li><i class="fas fa-check"></i> Quality Assured Production</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Indications Section -->
+<section class="indications" id="indications">
+    <div class="indications-container">
+        <h2 class="section-title slide-left">Primary Indications</h2>
+        <p class="section-desc slide-left">
+            DenPro Danshen Compound Capsules are indicated for various cardiovascular conditions
+            where improved circulation and heart support are needed.
+        </p>
+        
+        <div class="indications-grid">
+            <div class="indication-card slide-left">
+                <h3>Angina Pectoris</h3>
+                <p>Provides supportive care for chest pain associated with heart conditions, helping to improve coronary blood flow.</p>
+            </div>
+            
+            <div class="indication-card fade-up">
+                <h3>Coronary Artery Disease</h3>
+                <p>Supports cardiovascular health in cases of coronary artery conditions through improved circulation.</p>
+            </div>
+            
+            <div class="indication-card slide-right">
+                <h3>Poor Blood Circulation</h3>
+                <p>Enhances blood flow throughout the body, particularly beneficial for peripheral circulation issues.</p>
+            </div>
+            
+            <div class="indication-card slide-left">
+                <h3>Diabetic Cardiovascular Complications</h3>
+                <p>Provides adjunctive support for cardiovascular issues associated with diabetes.</p>
+            </div>
+            
+            <div class="indication-card fade-up">
+                <h3>Hyperlipidemia (Adjunct Support)</h3>
+                <p>Offers supportive care alongside conventional treatments for high cholesterol conditions.</p>
+            </div>
+            
+            <div class="indication-card slide-right">
+                <h3>General Cardiovascular Support</h3>
+                <p>Maintains overall heart health and circulatory function for preventive care.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Specifications Section -->
+<section class="specifications" id="specifications">
+    <div class="specifications-container">
+        <h2 class="section-title slide-left">Product Specifications</h2>
+        <p class="section-desc slide-left">
+            Detailed specifications and usage information for DenPro Danshen Compound Capsules.
+        </p>
+        
+        <div class="specs-table fade-up">
+            <div class="spec-row">
+                <div class="spec-header">Product Name</div>
+                <div class="spec-value">DenPro Danshen Compound Capsules</div>
+            </div>
+            
+            <div class="spec-row">
+                <div class="spec-header">Form & Strength</div>
+                <div class="spec-value">Capsules, 250 mg each</div>
+            </div>
+            
+            <div class="spec-row">
+                <div class="spec-header">Primary Function</div>
+                <div class="spec-value">Supports Heart Health & Blood Circulation</div>
+            </div>
+            
+            <div class="spec-row">
+                <div class="spec-header">Formulation</div>
+                <div class="spec-value">Herbal Cardio-Protective Formula™</div>
+            </div>
+            
+            <div class="spec-row">
+                <div class="spec-header">Manufacturer</div>
+                <div class="spec-value">Orbit Naturals, Peshawar, Pakistan</div>
+            </div>
+            
+            <div class="spec-row">
+                <div class="spec-header">Company Type</div>
+                <div class="spec-value">Pakistan DR&F Licensed Herbal, Nutraceutical Company</div>
+            </div>
+            
+            <div class="spec-row">
+                <div class="spec-header">Product Category</div>
+                <div class="spec-value">Alternative Medicine and Health OTI Product</div>
+            </div>
+            
+            <div class="spec-row">
+                <div class="spec-header">License Information</div>
+                <div class="spec-value">DPAIP S64 12215, 1010, dimiathed (orbail Ramneecedral 2580)</div>
+            </div>
+            
+            <div class="spec-row">
+                <div class="spec-header">Storage Instructions</div>
+                <div class="spec-value">Store below 25°C, protect from light & moisture. Keep out of reach of children.</div>
+            </div>
+            
+            <div class="spec-row">
+                <div class="spec-header">Children Advisory</div>
+                <div class="spec-value spec-highlight">Keep it away from children with direct use</div>
+            </div>
+        </div>
+        
+        <div class="warning-note fade-up">
+            <h4><i class="fas fa-exclamation-triangle"></i> Important Safety Information</h4>
+            <p>
+                This product is an alternative medicine supplement. Consult with a healthcare professional before use, 
+                especially if you have existing health conditions. Not intended to diagnose, 
+                treat, cure, or prevent any disease. Keep out of reach of children. Store in a cool, dry place away 
+                from direct sunlight.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- Premium Footer -->
+<footer class="footer" id="contact">
+    <div class="footer-container">
+        <div class="footer-content">
+            <div class="footer-col">
+                <div class="footer-logo">Orbicure</div>
+                <p class="footer-description">
+                    Leading the way in premium pharmaceutical and nutraceutical solutions with innovation, 
+                    integrity, and a commitment to improving global health standards.
+                </p>
+                <div class="footer-social">
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="/"><i class="fas fa-chevron-right"></i> Home</a></li>
+                    <li><a href="#info"><i class="fas fa-chevron-right"></i> Product Info</a></li>
+                    <li><a href="#indications"><i class="fas fa-chevron-right"></i> Indications</a></li>
+                    <li><a href="#specifications"><i class="fas fa-chevron-right"></i> Specifications</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-col">
+                <h4>Our Products</h4>
+                <ul class="footer-links">
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> DenPro Danshen Capsules</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Cardiology Range</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Herbal Formulations</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Nutraceuticals</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-col">
+                <h4>Contact Info</h4>
+                <ul class="footer-links">
+                    <li><a href="#"><i class="fas fa-map-marker-alt"></i> Islamabad, Pakistan</a></li>
+                    <li><a href="tel:03362631125"><i class="fas fa-phone"></i> 0336 2631125</a></li>
+                    <li><a href="mailto:info@orbicure.com"><i class="fas fa-envelope"></i> info@orbicure.com</a></li>
+                    <li><a href="#"><i class="fas fa-clock"></i> Mon-Fri: 9AM - 6PM</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>© 2026 Orbicure Pvt Ltd. All Rights Reserved. | Premium Pharmaceutical Solutions</p>
+            <p>Manufactured by Orbit Naturals, Peshawar, Pakistan | Pakistan DR&F Licensed Herbal, Nutraceutical Company</p>
+            <p>DenPro Danshen Compound Capsules | Herbal Cardio-Protective Formula™ | Store Better. Live Stronger.</p>
+        </div>
+    </div>
+</footer>
+
+<script>
+// Theme Toggle
+const themeToggle = document.getElementById('themeToggle');
+const body = document.body;
+
+// Check for saved theme or prefer-color-scheme
+const savedTheme = localStorage.getItem('orbicure-theme');
+const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+if (savedTheme === 'light' || (!savedTheme && !prefersDark)) {
+    body.classList.add('light-theme');
+}
+
+themeToggle.addEventListener('click', () => {
+    body.classList.toggle('light-theme');
+    
+    // Save preference
+    if (body.classList.contains('light-theme')) {
+        localStorage.setItem('orbicure-theme', 'light');
+    } else {
+        localStorage.setItem('orbicure-theme', 'dark');
+    }
+});
+
+// Mobile Menu Toggle
+const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+const navLinks = document.getElementById('navLinks');
+
+mobileMenuBtn.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+    mobileMenuBtn.innerHTML = navLinks.classList.contains('active') 
+        ? '<i class="fas fa-times"></i>' 
+        : '<i class="fas fa-bars"></i>';
+});
+
+// Close mobile menu when clicking a link
+document.querySelectorAll('.nav-link').forEach(link => {
+    link.addEventListener('click', () => {
+        navLinks.classList.remove('active');
+        mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
+    });
+});
+
+// Header scroll effect
+const header = document.getElementById('header');
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 100) {
+        header.style.padding = '0';
+        header.style.backdropFilter = 'blur(20px)';
+    } else {
+        header.style.padding = '';
+        header.style.backdropFilter = 'blur(20px)';
+    }
+});
+
+// Button actions
+document.getElementById('buyNowBtn').addEventListener('click', () => {
+    alert('Thank you for your interest in DenPro Danshen Compound Capsules!\n\nPlease contact us at info@orbicure.com or call 0336 2631125 for product inquiries, pricing, and availability.\n\nOur team will respond within 24 hours.');
+});
+
+document.getElementById('learnMoreBtn').addEventListener('click', () => {
+    document.getElementById('info').scrollIntoView({ behavior: 'smooth' });
+});
+
+document.querySelector('.nav-btn').addEventListener('click', () => {
+    document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+});
+
+// Enhanced scroll animations with slide effects
+const fadeElements = document.querySelectorAll('.fade-up, .slide-left, .slide-right');
+
+const animateOnScroll = () => {
+    fadeElements.forEach(element => {
+        const elementTop = element.getBoundingClientRect().top;
+        const windowHeight = window.innerHeight;
+        
+        if (elementTop < windowHeight - 100) {
+            element.classList.add('show');
+        }
+    });
+};
+
+// Initial check
+animateOnScroll();
+
+// Check on scroll with throttle for performance
+let ticking = false;
+window.addEventListener('scroll', () => {
+    if (!ticking) {
+        window.requestAnimationFrame(() => {
+            animateOnScroll();
+            ticking = false;
+        });
+        ticking = true;
+    }
+});
+
+// Smooth scrolling for anchor links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        
+        const targetId = this.getAttribute('href');
+        if (targetId === '#') return;
+        
+        const targetElement = document.querySelector(targetId);
+        if (targetElement) {
+            window.scrollTo({
+                top: targetElement.offsetTop - 80,
+                behavior: 'smooth'
+            });
+        }
+    });
+});
+
+// Parallax effect for hero glow
+window.addEventListener('scroll', () => {
+    const scrolled = window.pageYOffset;
+    const heroGlow = document.querySelector('.product-hero-glow');
+    
+    if (heroGlow) {
+        heroGlow.style.transform = `translateY(calc(-50% + ${scrolled * 0.05}px))`;
+    }
+});
+
+// Add hover effects to cards
+document.querySelectorAll('.info-card, .indication-card, .product-hero-btn').forEach(element => {
+    element.addEventListener('mouseenter', function() {
+        this.style.transform = this.style.transform || 'translateY(0)';
+    });
+    
+    element.addEventListener('mouseleave', function() {
+        if (!this.classList.contains('product-hero-btn-primary')) {
+            this.style.transform = 'translateY(0)';
+        }
+    });
+});
+</script>
+
+</body>
+</html>

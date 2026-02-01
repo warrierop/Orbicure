@@ -1,0 +1,1933 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- SEO -->
+<title>About Orbicure | Premium Pharmaceutical Innovation | Islamabad, Pakistan</title>
+<meta name="description" content="Discover Orbicure's mission to revolutionize healthcare through innovation, quality, and patient-centered pharmaceutical solutions in Pakistan.">
+<meta name="keywords" content="Orbicure About Us, Pharmaceutical Company Pakistan, Healthcare Innovation, Medical Research, Pharma Manufacturing, Quality Medicines, Islamabad Pharma">
+<meta name="author" content="Orbicure Pvt Ltd">
+<meta name="robots" content="index, follow">
+<meta property="og:title" content="About Orbicure | Premium Pharmaceutical Innovation">
+<meta property="og:description" content="Leading pharmaceutical innovation in Pakistan with quality healthcare solutions.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://orbicure.com/about">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="About Orbicure Pharmaceuticals">
+<meta name="twitter:description" content="Redefining healthcare through pharmaceutical excellence in Pakistan.">
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<style>
+:root {
+    --bg: #05070b;
+    --card-bg: #0b1225;
+    --section-bg: #070a15;
+    --text: #ffffff;
+    --text-secondary: #b0b0b0;
+    --primary: #1f6bff;
+    --primary-light: #5fa8ff;
+    --accent: #00d4ff;
+    --accent-glow: rgba(0, 212, 255, 0.2);
+    --gold: #ffd700;
+    --border: rgba(255, 255, 255, 0.08);
+    --shadow: rgba(0, 0, 0, 0.5);
+    
+    /* Light theme variables - will be toggled via JS */
+    --bg-light: #f8fafc;
+    --card-bg-light: #ffffff;
+    --section-bg-light: #f1f5f9;
+    --text-light: #1e293b;
+    --text-secondary-light: #64748b;
+    --border-light: rgba(0, 0, 0, 0.08);
+    --shadow-light: rgba(0, 0, 0, 0.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    transition: background-color 0.5s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+body {
+    background: var(--bg);
+    color: var(--text);
+    overflow-x: hidden;
+    line-height: 1.6;
+    transition: background-color 0.5s ease;
+}
+
+body.light-theme {
+    background: var(--bg-light);
+    color: var(--text-light);
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+h1, .section-title {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+}
+
+/* ================= THEME TOGGLE ================= */
+.theme-toggle-container {
+    position: fixed;
+    top: 100px;
+    right: 30px;
+    z-index: 999;
+}
+
+.theme-toggle {
+    width: 60px;
+    height: 30px;
+    background: var(--card-bg);
+    border-radius: 50px;
+    border: 1px solid var(--border);
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 8px;
+    transition: all 0.3s ease;
+}
+
+body.light-theme .theme-toggle {
+    background: var(--card-bg-light);
+    border-color: var(--border-light);
+}
+
+.toggle-icon {
+    font-size: 14px;
+    color: var(--text);
+    transition: all 0.3s ease;
+}
+
+body.light-theme .toggle-icon {
+    color: var(--text-light);
+}
+
+.toggle-slider {
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    background: linear-gradient(135deg, var(--primary), var(--accent));
+    border-radius: 50%;
+    top: 3px;
+    left: 5px;
+    transition: transform 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+    box-shadow: 0 2px 5px var(--shadow);
+}
+
+body.light-theme .toggle-slider {
+    transform: translateX(30px);
+}
+
+/* ================= PREMIUM HEADER ================= */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    backdrop-filter: blur(20px);
+    background: rgba(5, 7, 11, 0.85);
+    border-bottom: 1px solid var(--border);
+    padding: 0;
+    transition: all 0.4s ease;
+}
+
+body.light-theme header {
+    background: rgba(248, 250, 252, 0.9);
+    border-bottom-color: var(--border-light);
+}
+
+.header-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 20px 0;
+    text-decoration: none;
+}
+
+.logo-icon {
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, var(--primary), var(--accent));
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 22px;
+    color: white;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.5s ease;
+}
+
+.logo-icon::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, transparent, rgba(255, 255, 255, 0.2));
+}
+
+.logo-container:hover .logo-icon {
+    transform: rotate(15deg) scale(1.1);
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    background: linear-gradient(90deg, var(--text), var(--primary-light));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+body.light-theme .logo {
+    background: linear-gradient(90deg, var(--text-light), var(--primary));
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.logo span {
+    color: var(--primary);
+}
+
+.nav-links {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.nav-link {
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    position: relative;
+    padding: 25px 0;
+    transition: color 0.3s ease;
+}
+
+body.light-theme .nav-link {
+    color: var(--text-secondary-light);
+}
+
+.nav-link:hover {
+    color: var(--text);
+}
+
+body.light-theme .nav-link:hover {
+    color: var(--text-light);
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--primary), var(--accent));
+    border-radius: 10px;
+    transition: width 0.4s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.nav-btn {
+    padding: 12px 28px;
+    border-radius: 50px;
+    border: 1px solid var(--primary);
+    color: var(--primary);
+    background: transparent;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    transition: all 0.4s ease;
+    margin-left: 10px;
+}
+
+.nav-btn:hover {
+    background: var(--primary);
+    color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(31, 107, 255, 0.3);
+}
+
+.mobile-menu-btn {
+    display: none;
+    background: transparent;
+    border: none;
+    color: var(--text);
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+body.light-theme .mobile-menu-btn {
+    color: var(--text-light);
+}
+
+/* ================= ABOUT HERO ================= */
+.about-hero {
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    padding: 160px 20px 100px;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(135deg, rgba(11, 18, 37, 0.9), rgba(7, 10, 21, 0.9));
+}
+
+body.light-theme .about-hero {
+    background: linear-gradient(135deg, rgba(241, 245, 249, 0.9), rgba(248, 250, 252, 0.9));
+}
+
+.about-hero-bg {
+    position: absolute;
+    inset: 0;
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><rect width="100" height="100" fill="%230b1225"/><path d="M0,50 Q25,25 50,50 T100,50" stroke="%231f6bff" stroke-width="0.5" fill="none"/><path d="M0,30 Q25,5 50,30 T100,30" stroke="%2300d4ff" stroke-width="0.3" fill="none" opacity="0.7"/></svg>');
+    background-size: 200px;
+    opacity: 0.5;
+    z-index: 1;
+}
+
+body.light-theme .about-hero-bg {
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><rect width="100" height="100" fill="%23f1f5f9"/><path d="M0,50 Q25,25 50,50 T100,50" stroke="%231f6bff" stroke-width="0.5" fill="none"/><path d="M0,30 Q25,5 50,30 T100,30" stroke="%2300d4ff" stroke-width="0.3" fill="none" opacity="0.7"/></svg>');
+    background-size: 200px;
+}
+
+.about-hero-glow {
+    position: absolute;
+    width: 800px;
+    height: 800px;
+    background: radial-gradient(circle, var(--accent-glow) 0%, transparent 70%);
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    animation: pulseGlow 8s infinite alternate ease-in-out;
+}
+
+.about-hero-content {
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    z-index: 2;
+}
+
+.about-hero-subtitle {
+    font-size: 18px;
+    color: var(--primary-light);
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+    font-weight: 500;
+    animation: fadeInUp 1s ease;
+}
+
+.about-hero h1 {
+    font-size: clamp(42px, 7vw, 78px);
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 30px;
+    animation: fadeInUp 1s ease 0.2s both;
+}
+
+.about-dynamic-text-container {
+    display: inline-block;
+    position: relative;
+    height: 90px;
+    overflow: hidden;
+    margin: 10px 0;
+}
+
+.about-dynamic-text {
+    font-size: clamp(42px, 7vw, 78px);
+    font-weight: 700;
+    color: var(--primary);
+    display: flex;
+    flex-direction: column;
+    animation: slideText 12s infinite ease-in-out;
+}
+
+.about-hero p {
+    margin: 30px auto 0;
+    color: var(--text-secondary);
+    font-size: 20px;
+    max-width: 800px;
+    line-height: 1.8;
+    animation: fadeInUp 1s ease 0.4s both;
+}
+
+body.light-theme .about-hero p {
+    color: var(--text-secondary-light);
+}
+
+.about-hero-stats {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin-top: 70px;
+    flex-wrap: wrap;
+    animation: fadeInUp 1s ease 0.6s both;
+}
+
+.about-stat {
+    text-align: center;
+}
+
+.about-stat-number {
+    font-size: 48px;
+    font-weight: 700;
+    color: var(--primary);
+    line-height: 1;
+    margin-bottom: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.about-stat-label {
+    font-size: 16px;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+body.light-theme .about-stat-label {
+    color: var(--text-secondary-light);
+}
+
+/* ================= MISSION SECTION ================= */
+.mission {
+    padding: 100px 20px;
+    background: var(--section-bg);
+    position: relative;
+}
+
+body.light-theme .mission {
+    background: var(--section-bg-light);
+}
+
+.mission-container {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.section-title {
+    font-size: 42px;
+    margin-bottom: 20px;
+    position: relative;
+    display: inline-block;
+    color: var(--text);
+}
+
+body.light-theme .section-title {
+    color: var(--text-light);
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(90deg, var(--primary), var(--accent));
+    border-radius: 10px;
+}
+
+.section-desc {
+    max-width: 700px;
+    color: var(--text-secondary);
+    font-size: 18px;
+    margin-top: 30px;
+    margin-bottom: 70px;
+}
+
+body.light-theme .section-desc {
+    color: var(--text-secondary-light);
+}
+
+.mission-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    margin-top: 50px;
+}
+
+.mission-card {
+    background: var(--card-bg);
+    border-radius: 20px;
+    padding: 50px 40px;
+    border: 1px solid var(--border);
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+body.light-theme .mission-card {
+    background: var(--card-bg-light);
+    border-color: var(--border-light);
+}
+
+.mission-card:hover {
+    transform: translateY(-15px);
+    border-color: var(--primary);
+    box-shadow: 0 30px 60px var(--shadow);
+}
+
+body.light-theme .mission-card:hover {
+    box-shadow: 0 30px 60px var(--shadow-light);
+}
+
+.mission-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 6px;
+    background: linear-gradient(90deg, var(--primary), var(--accent));
+}
+
+.mission-icon {
+    width: 80px;
+    height: 80px;
+    background: rgba(31, 107, 255, 0.1);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 30px;
+    color: var(--primary);
+    font-size: 32px;
+}
+
+.mission-card h3 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: var(--text);
+}
+
+body.light-theme .mission-card h3 {
+    color: var(--text-light);
+}
+
+.mission-card p {
+    color: var(--text-secondary);
+    line-height: 1.8;
+    font-size: 17px;
+}
+
+body.light-theme .mission-card p {
+    color: var(--text-secondary-light);
+}
+
+/* ================= VALUES SECTION ================= */
+.values {
+    padding: 100px 20px;
+    background: var(--bg);
+    position: relative;
+}
+
+body.light-theme .values {
+    background: var(--bg-light);
+}
+
+.values-container {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 70px;
+}
+
+.value-item {
+    background: var(--card-bg);
+    border-radius: 15px;
+    padding: 40px 30px;
+    border: 1px solid var(--border);
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+body.light-theme .value-item {
+    background: var(--card-bg-light);
+    border-color: var(--border-light);
+}
+
+.value-item:hover {
+    transform: translateY(-10px);
+    border-color: var(--accent);
+}
+
+.value-number {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(135deg, var(--primary), var(--accent));
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.value-icon {
+    width: 60px;
+    height: 60px;
+    background: rgba(0, 212, 255, 0.1);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+    color: var(--accent);
+    font-size: 24px;
+}
+
+.value-item h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: var(--text);
+}
+
+body.light-theme .value-item h3 {
+    color: var(--text-light);
+}
+
+.value-item p {
+    color: var(--text-secondary);
+    line-height: 1.7;
+}
+
+body.light-theme .value-item p {
+    color: var(--text-secondary-light);
+}
+
+/* ================= LEADERSHIP SECTION ================= */
+.leadership {
+    padding: 100px 20px;
+    background: linear-gradient(135deg, rgba(11, 18, 37, 0.9), rgba(7, 10, 21, 0.9));
+    position: relative;
+}
+
+body.light-theme .leadership {
+    background: linear-gradient(135deg, rgba(241, 245, 249, 0.9), rgba(248, 250, 252, 0.9));
+}
+
+.leadership-container {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.leadership-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    margin-top: 70px;
+}
+
+.leader-card {
+    background: var(--card-bg);
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid var(--border);
+    transition: all 0.4s ease;
+    position: relative;
+}
+
+body.light-theme .leader-card {
+    background: var(--card-bg-light);
+    border-color: var(--border-light);
+}
+
+.leader-card:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 30px 60px var(--shadow);
+}
+
+body.light-theme .leader-card:hover {
+    box-shadow: 0 30px 60px var(--shadow-light);
+}
+
+.leader-image {
+    height: 300px;
+    background: linear-gradient(135deg, #0b1225, #070a15);
+    position: relative;
+    overflow: hidden;
+}
+
+body.light-theme .leader-image {
+    background: linear-gradient(135deg, #f1f5f9, #ffffff);
+}
+
+.leader-image::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: 
+        radial-gradient(circle at 30% 30%, rgba(31, 107, 255, 0.15) 0%, transparent 50%),
+        radial-gradient(circle at 70% 70%, rgba(0, 212, 255, 0.1) 0%, transparent 50%);
+    z-index: 1;
+}
+
+.leader-initials {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 80px;
+    font-weight: 900;
+    color: rgba(255, 255, 255, 0.05);
+    z-index: 1;
+    font-family: 'Playfair Display', serif;
+}
+
+body.light-theme .leader-initials {
+    color: rgba(0, 0, 0, 0.05);
+}
+
+.leader-info {
+    padding: 40px;
+}
+
+.leader-info h3 {
+    font-size: 24px;
+    margin-bottom: 8px;
+    color: var(--text);
+}
+
+body.light-theme .leader-info h3 {
+    color: var(--text-light);
+}
+
+.leader-position {
+    color: var(--primary);
+    font-weight: 600;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.leader-bio {
+    color: var(--text-secondary);
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+body.light-theme .leader-bio {
+    color: var(--text-secondary-light);
+}
+
+.leader-social {
+    display: flex;
+    gap: 15px;
+}
+
+.leader-social a {
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text);
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border: 1px solid var(--border);
+}
+
+body.light-theme .leader-social a {
+    background: rgba(0, 0, 0, 0.02);
+    color: var(--text-light);
+    border-color: var(--border-light);
+}
+
+.leader-social a:hover {
+    background: var(--primary);
+    color: white;
+    border-color: var(--primary);
+    transform: translateY(-3px);
+}
+
+/* ================= TIMELINE SECTION ================= */
+.timeline {
+    padding: 100px 20px;
+    background: var(--section-bg);
+    position: relative;
+}
+
+body.light-theme .timeline {
+    background: var(--section-bg-light);
+}
+
+.timeline-container {
+    max-width: 1300px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.timeline-line {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background: linear-gradient(to bottom, var(--primary), var(--accent));
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.timeline-items {
+    position: relative;
+    z-index: 2;
+}
+
+.timeline-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 80px;
+    position: relative;
+}
+
+.timeline-item:nth-child(odd) {
+    flex-direction: row;
+}
+
+.timeline-item:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.timeline-dot {
+    width: 24px;
+    height: 24px;
+    background: linear-gradient(135deg, var(--primary), var(--accent));
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    box-shadow: 0 0 20px rgba(31, 107, 255, 0.5);
+}
+
+.timeline-content {
+    background: var(--card-bg);
+    border-radius: 20px;
+    padding: 40px;
+    width: calc(50% - 60px);
+    border: 1px solid var(--border);
+    transition: all 0.4s ease;
+}
+
+body.light-theme .timeline-content {
+    background: var(--card-bg-light);
+    border-color: var(--border-light);
+}
+
+.timeline-content:hover {
+    transform: translateY(-10px);
+    border-color: var(--primary);
+    box-shadow: 0 20px 40px var(--shadow);
+}
+
+body.light-theme .timeline-content:hover {
+    box-shadow: 0 20px 40px var(--shadow-light);
+}
+
+.timeline-year {
+    display: inline-block;
+    padding: 8px 20px;
+    background: linear-gradient(90deg, var(--primary), var(--accent));
+    color: white;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.timeline-content h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: var(--text);
+}
+
+body.light-theme .timeline-content h3 {
+    color: var(--text-light);
+}
+
+.timeline-content p {
+    color: var(--text-secondary);
+    line-height: 1.7;
+}
+
+body.light-theme .timeline-content p {
+    color: var(--text-secondary-light);
+}
+
+/* ================= CONTACT CTA ================= */
+.contact-cta {
+    padding: 100px 20px;
+    background: var(--bg);
+    position: relative;
+    overflow: hidden;
+}
+
+body.light-theme .contact-cta {
+    background: var(--bg-light);
+}
+
+.contact-cta-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+.cta-card {
+    background: var(--card-bg);
+    border-radius: 24px;
+    padding: 80px 60px;
+    border: 1px solid var(--border);
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4);
+    position: relative;
+    overflow: hidden;
+}
+
+body.light-theme .cta-card {
+    background: var(--card-bg-light);
+    border-color: var(--border-light);
+    box-shadow: 0 30px 60px var(--shadow-light);
+}
+
+.cta-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 6px;
+    background: linear-gradient(90deg, var(--primary), var(--accent));
+}
+
+.cta-title {
+    font-size: 36px;
+    margin-bottom: 25px;
+    background: linear-gradient(90deg, var(--text), var(--primary-light));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+body.light-theme .cta-title {
+    background: linear-gradient(90deg, var(--text-light), var(--primary));
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.cta-text {
+    color: var(--text-secondary);
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 40px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body.light-theme .cta-text {
+    color: var(--text-secondary-light);
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.cta-btn {
+    padding: 16px 40px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    border: none;
+}
+
+.cta-btn-primary {
+    background: linear-gradient(90deg, var(--primary), var(--accent));
+    color: white;
+}
+
+.cta-btn-primary:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(31, 107, 255, 0.4);
+}
+
+.cta-btn-secondary {
+    background: transparent;
+    color: var(--text);
+    border: 2px solid var(--border);
+}
+
+body.light-theme .cta-btn-secondary {
+    color: var(--text-light);
+    border-color: var(--border-light);
+}
+
+.cta-btn-secondary:hover {
+    background: rgba(255, 255, 255, 0.05);
+    border-color: var(--primary);
+    transform: translateY(-5px);
+}
+
+body.light-theme .cta-btn-secondary:hover {
+    background: rgba(0, 0, 0, 0.02);
+}
+
+/* ================= PREMIUM FOOTER ================= */
+.footer {
+    background: var(--section-bg);
+    padding: 100px 20px 40px;
+    border-top: 1px solid var(--border);
+    position: relative;
+}
+
+body.light-theme .footer {
+    background: var(--section-bg-light);
+    border-color: var(--border-light);
+}
+
+.footer-container {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 60px;
+    margin-bottom: 70px;
+}
+
+.footer-col h4 {
+    font-size: 22px;
+    margin-bottom: 30px;
+    position: relative;
+    padding-bottom: 15px;
+    color: var(--text);
+}
+
+body.light-theme .footer-col h4 {
+    color: var(--text-light);
+}
+
+.footer-col h4::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 3px;
+    background: linear-gradient(90deg, var(--primary), var(--accent));
+    border-radius: 10px;
+}
+
+.footer-logo {
+    font-size: 32px;
+    font-weight: 700;
+    background: linear-gradient(90deg, var(--text), var(--primary-light));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 25px;
+    display: inline-block;
+}
+
+body.light-theme .footer-logo {
+    background: linear-gradient(90deg, var(--text-light), var(--primary));
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.footer-description {
+    color: var(--text-secondary);
+    margin-bottom: 30px;
+    line-height: 1.8;
+}
+
+body.light-theme .footer-description {
+    color: var(--text-secondary-light);
+}
+
+.footer-social {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icon {
+    width: 45px;
+    height: 45px;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text);
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border: 1px solid var(--border);
+}
+
+body.light-theme .social-icon {
+    background: rgba(0, 0, 0, 0.02);
+    color: var(--text-light);
+    border-color: var(--border-light);
+}
+
+.social-icon:hover {
+    background: var(--primary);
+    color: white;
+    transform: translateY(-5px);
+    border-color: var(--primary);
+}
+
+.footer-links {
+    list-style: none;
+}
+
+.footer-links li {
+    margin-bottom: 18px;
+}
+
+.footer-links a {
+    color: var(--text-secondary);
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+body.light-theme .footer-links a {
+    color: var(--text-secondary-light);
+}
+
+.footer-links a:hover {
+    color: var(--primary);
+    transform: translateX(5px);
+}
+
+.footer-links a i {
+    font-size: 12px;
+    color: var(--primary);
+}
+
+.footer-bottom {
+    padding-top: 40px;
+    border-top: 1px solid var(--border);
+    text-align: center;
+    color: var(--text-secondary);
+    font-size: 14px;
+}
+
+body.light-theme .footer-bottom {
+    border-color: var(--border-light);
+    color: var(--text-secondary-light);
+}
+
+.footer-bottom p {
+    margin-bottom: 10px;
+}
+
+/* ================= ANIMATIONS ================= */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideText {
+    0%, 20% { transform: translateY(0); }
+    25%, 45% { transform: translateY(-90px); }
+    50%, 70% { transform: translateY(-180px); }
+    75%, 95% { transform: translateY(-270px); }
+    100% { transform: translateY(0); }
+}
+
+@keyframes pulseGlow {
+    0% { opacity: 0.5; transform: translate(-50%, -50%) scale(1); }
+    100% { opacity: 0.8; transform: translate(-50%, -50%) scale(1.1); }
+}
+
+/* Enhanced fade-in with slide effects */
+.fade-up {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-up.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Slide in from left */
+.slide-left {
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.slide-left.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Slide in from right */
+.slide-right {
+    opacity: 0;
+    transform: translateX(50px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.slide-right.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 1100px) {
+    .timeline-line {
+        left: 30px;
+    }
+    
+    .timeline-item {
+        flex-direction: row !important;
+    }
+    
+    .timeline-content {
+        width: calc(100% - 100px);
+        margin-left: 80px;
+    }
+    
+    .timeline-dot {
+        left: 30px;
+    }
+    
+    .theme-toggle-container {
+        top: 80px;
+        right: 20px;
+    }
+}
+
+@media (max-width: 900px) {
+    .nav-links {
+        position: fixed;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background: rgba(5, 7, 11, 0.95);
+        backdrop-filter: blur(20px);
+        flex-direction: column;
+        padding: 30px;
+        gap: 0;
+        transform: translateY(-100%);
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.4s ease;
+        border-bottom: 1px solid var(--border);
+    }
+    
+    body.light-theme .nav-links {
+        background: rgba(248, 250, 252, 0.95);
+        border-color: var(--border-light);
+    }
+    
+    .nav-links.active {
+        transform: translateY(0);
+        opacity: 1;
+        visibility: visible;
+    }
+    
+    .nav-link {
+        padding: 20px 0;
+        width: 100%;
+        text-align: center;
+        border-bottom: 1px solid var(--border);
+    }
+    
+    body.light-theme .nav-link {
+        border-color: var(--border-light);
+    }
+    
+    .nav-link:last-child {
+        border-bottom: none;
+    }
+    
+    .mobile-menu-btn {
+        display: block;
+    }
+    
+    .about-hero h1 {
+        font-size: clamp(36px, 6vw, 60px);
+    }
+    
+    .about-dynamic-text {
+        font-size: clamp(36px, 6vw, 60px);
+    }
+    
+    .section-title {
+        font-size: 36px;
+    }
+    
+    .about-hero-stats {
+        gap: 40px;
+    }
+    
+    .about-stat-number {
+        font-size: 36px;
+    }
+    
+    .cta-card {
+        padding: 60px 40px;
+    }
+    
+    .cta-title {
+        font-size: 30px;
+    }
+    
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .cta-btn {
+        width: 100%;
+        max-width: 300px;
+        justify-content: center;
+    }
+    
+    .footer-content {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 40px;
+    }
+}
+
+@media (max-width: 600px) {
+    .about-hero {
+        padding: 140px 20px 80px;
+    }
+    
+    .about-hero-stats {
+        gap: 30px;
+    }
+    
+    .about-stat {
+        flex: 1 0 calc(50% - 30px);
+    }
+    
+    .mission-card, .value-item, .leader-card, .timeline-content {
+        padding: 30px;
+    }
+    
+    .leader-image {
+        height: 250px;
+    }
+    
+    .cta-card {
+        padding: 50px 30px;
+    }
+    
+    .footer {
+        padding: 70px 20px 30px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- Theme Toggle -->
+<div class="theme-toggle-container">
+    <div class="theme-toggle" id="themeToggle">
+        <div class="toggle-slider"></div>
+        <span class="toggle-icon"><i class="fas fa-moon"></i></span>
+        <span class="toggle-icon"><i class="fas fa-sun"></i></span>
+    </div>
+</div>
+
+<!-- Premium Header -->
+<header id="header">
+    <div class="header-container">
+        <a href="/" class="logo-container">
+            <div class="logo-icon">O</div>
+            <div class="logo">Orbi<span>cure</span></div>
+        </a>
+        
+        <button class="mobile-menu-btn" id="mobileMenuBtn">
+            <i class="fas fa-bars"></i>
+        </button>
+        
+        <div class="nav-links" id="navLinks">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="Aboutus.html" class="nav-link">About Us</a>
+            <a href="products.html" class="nav-link">Products</a>
+            <a href="#announcement" class="nav-link">Announcements</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+            <button class="nav-btn" id="headerContactBtn">Get In Touch</button>
+        </div>
+    </div>
+</header>
+
+<!-- About Hero Section -->
+<section class="about-hero" id="about">
+    <div class="about-hero-bg"></div>
+    <div class="about-hero-glow"></div>
+    
+    <div class="about-hero-content">
+        <p class="about-hero-subtitle fade-up">Redefining Pharmaceutical Excellence</p>
+        <h1 class="fade-up">
+            <div class="about-dynamic-text-container">
+                <div class="about-dynamic-text">
+                    <span>Our Story</span>
+                    <span>Our Mission</span>
+                    <span>Our Vision</span>
+                    <span>Our Commitment</span>
+                </div>
+            </div>
+            <br>Orbicure Pharmaceuticals
+        </h1>
+        <p class="fade-up">
+            Orbicure Pvt Ltd is revolutionizing the pharmaceutical landscape in Pakistan through 
+            innovation, quality, and patient-centered care. Founded with a vision to deliver 
+            premium healthcare solutions, we combine cutting-edge research with uncompromising 
+            ethical standards.
+        </p>
+        
+        <div class="about-hero-stats">
+            <div class="about-stat fade-up">
+                <div class="about-stat-number">2025</div>
+                <div class="about-stat-label">Year Founded</div>
+            </div>
+            <div class="about-stat fade-up">
+                <div class="about-stat-number">1+</div>
+                <div class="about-stat-label">Products</div>
+            </div>
+            <div class="about-stat fade-up">
+                <div class="about-stat-number">10+</div>
+                <div class="about-stat-label">Team Members</div>
+            </div>
+            <div class="about-stat fade-up">
+                <div class="about-stat-number">5+</div>
+                <div class="about-stat-label">cities Served</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Mission Section -->
+<section class="mission" id="mission">
+    <div class="mission-container">
+        <h2 class="section-title slide-left">Our Mission & Vision</h2>
+        <p class="section-desc slide-left">
+            We are driven by a commitment to transform healthcare through innovative 
+            pharmaceutical solutions that prioritize patient well-being and accessibility.
+        </p>
+        
+        <div class="mission-grid">
+            <div class="mission-card slide-left">
+                <div class="mission-icon">
+                    <i class="fas fa-bullseye"></i>
+                </div>
+                <h3>Our Mission</h3>
+                <p>
+                    To develop and deliver premium pharmaceutical solutions that improve 
+                    patient outcomes, enhance quality of life, and set new standards in 
+                    healthcare innovation across Pakistan and beyond.
+                </p>
+            </div>
+            
+            <div class="mission-card fade-up">
+                <div class="mission-icon">
+                    <i class="fas fa-eye"></i>
+                </div>
+                <h3>Our Vision</h3>
+                <p>
+                    To become the leading pharmaceutical innovator in the region, recognized 
+                    globally for excellence in research, quality manufacturing, and ethical 
+                    healthcare practices.
+                </p>
+            </div>
+            
+            <div class="mission-card slide-right">
+                <div class="mission-icon">
+                    <i class="fas fa-handshake"></i>
+                </div>
+                <h3>Our Promise</h3>
+                <p>
+                    Every Orbicure product represents our unwavering commitment to quality, 
+                    safety, and efficacy. We promise to put patients first in everything we do.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Values Section -->
+<section class="values" id="values">
+    <div class="values-container">
+        <h2 class="section-title slide-left">Our Core Values</h2>
+        <p class="section-desc slide-left">
+            These principles guide every decision we make and every product we develop at Orbicure.
+        </p>
+        
+        <div class="values-grid">
+            <div class="value-item slide-left">
+                <div class="value-number">1</div>
+                <div class="value-icon">
+                    <i class="fas fa-flask"></i>
+                </div>
+                <h3>Innovation</h3>
+                <p>Continuously pushing boundaries in pharmaceutical research and development to create cutting-edge healthcare solutions.</p>
+            </div>
+            
+            <div class="value-item fade-up">
+                <div class="value-number">2</div>
+                <div class="value-icon">
+                    <i class="fas fa-award"></i>
+                </div>
+                <h3>Quality</h3>
+                <p>Uncompromising standards in manufacturing, testing, and quality control to ensure safety and efficacy.</p>
+            </div>
+            
+            <div class="value-item fade-up">
+                <div class="value-number">3</div>
+                <div class="value-icon">
+                    <i class="fas fa-user-md"></i>
+                </div>
+                <h3>Patient-Centric</h3>
+                <p>Putting patient needs and outcomes at the center of everything we do, from research to delivery.</p>
+            </div>
+            
+            <div class="value-item slide-right">
+                <div class="value-number">4</div>
+                <div class="value-icon">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <h3>Integrity</h3>
+                <p>Conducting business with transparency, honesty, and the highest ethical standards.</p>
+            </div>
+            
+            <div class="value-item slide-left">
+                <div class="value-number">5</div>
+                <div class="value-icon">
+                    <i class="fas fa-globe"></i>
+                </div>
+                <h3>Accessibility</h3>
+                <p>Making quality healthcare solutions available and affordable to those who need them most.</p>
+            </div>
+            
+            <div class="value-item slide-right">
+                <div class="value-number">6</div>
+                <div class="value-icon">
+                    <i class="fas fa-users"></i>
+                </div>
+                <h3>Collaboration</h3>
+                <p>Working with healthcare professionals, researchers, and communities to advance medical science.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Timeline Section -->
+<section class="timeline" id="timeline">
+    <div class="timeline-container">
+        <h2 class="section-title slide-left">Our Journey</h2>
+        <p class="section-desc slide-left">
+            From humble beginnings to becoming a leading pharmaceutical innovator in Pakistan.
+        </p>
+        
+        <div class="timeline-line"></div>
+        
+        <div class="timeline-items">
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content slide-left">
+                    <span class="timeline-year">2025</span>
+                    <h3>Founding Vision</h3>
+                    <p>
+                        Orbicure was founded by Kamran Baig in Islamabad with a vision to revolutionize 
+                        pharmaceutical care in Pakistan through innovation and quality.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content slide-right">
+                    <span class="timeline-year">2026</span>
+                    <h3>First Product Launch</h3>
+                    <p>
+                        Successfully launched our first line of cardiovascular medications, 
+                        receiving positive feedback from healthcare professionals across Pakistan.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content slide-left">
+                    <span class="timeline-year">2025</span>
+                    <h3>Company Took Practical Steps</h3>
+                    <p>
+                        Established our company and scaled it more with our research and development center, 
+                        investing in advanced equipment and scientific talent.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content slide-right">
+                    <span class="timeline-year">2026</span>
+                    <h3>Expansion</h3>
+                    <p>
+                        Expanded operations to serve markets, beginning with 
+                        expanding to other cities across Pakistan.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content slide-left">
+                    <span class="timeline-year">2026</span>
+                    <h3>Launched New Plans</h3>
+                    <p>
+                       Our company took new initiatives to make revolutionary changes in pharmaceutical industry.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content slide-right">
+                    <span class="timeline-year">2025</span>
+                    <h3>Innovation Recognition</h3>
+                    <p>
+                        Received multiple recognitions for pharmaceutical innovation from our regular customers & clients.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact CTA Section -->
+<section class="contact-cta" id="contact">
+    <div class="contact-cta-container">
+        <div class="cta-card fade-up">
+            <h2 class="cta-title">Join Us in Redefining Healthcare</h2>
+            <p class="cta-text">
+                Whether you're a healthcare professional, researcher, potential partner, 
+                or someone passionate about pharmaceutical innovation, we'd love to connect 
+                with you. Together, we can advance healthcare for millions.
+            </p>
+            
+            <div class="cta-buttons">
+                <button class="cta-btn cta-btn-primary" id="ctaContactBtn">
+                    <i class="fas fa-paper-plane"></i> Contact Our Team
+                </button>
+                <a href="/careers" class="cta-btn cta-btn-secondary">
+                    <i class="fas fa-briefcase"></i> Explore Careers
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Premium Footer -->
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-content">
+            <div class="footer-col">
+                <div class="footer-logo">Orbicure</div>
+                <p class="footer-description">
+                    Leading the way in premium pharmaceutical solutions with innovation, 
+                    integrity, and a commitment to improving global health standards.
+                </p>
+                <div class="footer-social">
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+                    <li><a href="Aboutus.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                    <li><a href="#mission"><i class="fas fa-chevron-right"></i> Mission & Vision</a></li>
+                    <li><a href="#leadership"><i class="fas fa-chevron-right"></i> Leadership</a></li>
+                    <li><a href="#timeline"><i class="fas fa-chevron-right"></i> Our Journey</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-col">
+                <h4>Our Focus</h4>
+                <ul class="footer-links">
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Cardiology</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Neurology</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Respiratory</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Immunology</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Research & Development</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-col">
+                <h4>Contact Info</h4>
+                <ul class="footer-links">
+                    <li><a href="#"><i class="fas fa-map-marker-alt"></i> Islamabad, Pakistan</a></li>
+                    <li><a href="tel:03362631125"><i class="fas fa-phone"></i> 0336 2631125</a></li>
+                    <li><a href="mailto:info@orbicure.com"><i class="fas fa-envelope"></i> info@orbicure.com</a></li>
+                    <li><a href="#"><i class="fas fa-clock"></i> Mon-Fri: 9AM - 6PM</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>© 2026 Orbicure Pvt Ltd. All Rights Reserved. | Premium Pharmaceutical Solutions</p>
+            <p>Islamabad, Pakistan | Phone: 0336 2631125 | Email: info@orbicure.com</p>
+            <p>Redefining Healthcare Through Innovation</p>
+        </div>
+    </div>
+</footer>
+
+<script>
+// Theme Toggle
+const themeToggle = document.getElementById('themeToggle');
+const body = document.body;
+
+// Check for saved theme or prefer-color-scheme
+const savedTheme = localStorage.getItem('orbicure-theme');
+const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+if (savedTheme === 'light' || (!savedTheme && !prefersDark)) {
+    body.classList.add('light-theme');
+}
+
+themeToggle.addEventListener('click', () => {
+    body.classList.toggle('light-theme');
+    
+    // Save preference
+    if (body.classList.contains('light-theme')) {
+        localStorage.setItem('orbicure-theme', 'light');
+    } else {
+        localStorage.setItem('orbicure-theme', 'dark');
+    }
+});
+
+// Mobile Menu Toggle
+const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+const navLinks = document.getElementById('navLinks');
+
+mobileMenuBtn.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+    mobileMenuBtn.innerHTML = navLinks.classList.contains('active') 
+        ? '<i class="fas fa-times"></i>' 
+        : '<i class="fas fa-bars"></i>';
+});
+
+// Close mobile menu when clicking a link
+document.querySelectorAll('.nav-link').forEach(link => {
+    link.addEventListener('click', () => {
+        navLinks.classList.remove('active');
+        mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
+    });
+});
+
+// Header scroll effect
+const header = document.getElementById('header');
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 100) {
+        header.style.padding = '0';
+        header.style.backdropFilter = 'blur(20px)';
+    } else {
+        header.style.padding = '';
+        header.style.backdropFilter = 'blur(20px)';
+    }
+});
+
+// Contact buttons
+document.getElementById('headerContactBtn').addEventListener('click', () => {
+    document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+});
+
+document.getElementById('ctaContactBtn').addEventListener('click', () => {
+    alert('Thank you for your interest in Orbicure!\n\nPlease contact us at:\n📧 info@orbicure.com\n📞 0336 2631125\n\nOur team will respond within 24 hours.');
+});
+
+// Enhanced scroll animations with slide effects
+const fadeElements = document.querySelectorAll('.fade-up, .slide-left, .slide-right');
+
+const animateOnScroll = () => {
+    fadeElements.forEach(element => {
+        const elementTop = element.getBoundingClientRect().top;
+        const windowHeight = window.innerHeight;
+        
+        if (elementTop < windowHeight - 100) {
+            element.classList.add('show');
+        }
+    });
+};
+
+// Initial check
+animateOnScroll();
+
+// Check on scroll with throttle for performance
+let ticking = false;
+window.addEventListener('scroll', () => {
+    if (!ticking) {
+        window.requestAnimationFrame(() => {
+            animateOnScroll();
+            ticking = false;
+        });
+        ticking = true;
+    }
+});
+
+// Smooth scrolling for anchor links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        
+        const targetId = this.getAttribute('href');
+        if (targetId === '#') return;
+        
+        const targetElement = document.querySelector(targetId);
+        if (targetElement) {
+            window.scrollTo({
+                top: targetElement.offsetTop - 80,
+                behavior: 'smooth'
+            });
+        }
+    });
+});
+
+// Parallax effect for hero glow
+window.addEventListener('scroll', () => {
+    const scrolled = window.pageYOffset;
+    const heroGlow = document.querySelector('.about-hero-glow');
+    
+    if (heroGlow) {
+        heroGlow.style.transform = `translate(-50%, calc(-50% + ${scrolled * 0.1}px))`;
+    }
+});
+
+// Add hover effects to cards
+document.querySelectorAll('.mission-card, .value-item, .leader-card, .timeline-content, .cta-btn').forEach(element => {
+    element.addEventListener('mouseenter', function() {
+        this.style.transform = this.style.transform || 'translateY(0)';
+    });
+    
+    element.addEventListener('mouseleave', function() {
+        if (!this.classList.contains('cta-btn-primary')) {
+            this.style.transform = 'translateY(0)';
+        }
+    });
+});
+</script>
+
+<!-- JSON-LD Structured Data for SEO -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Orbicure Pvt Ltd",
+  "url": "https://orbicure.com",
+  "logo": "https://orbicure.com/logo.png",
+  "description": "Premium pharmaceutical company revolutionizing healthcare through innovation, quality, and patient-centered solutions in Pakistan.",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Islamabad",
+    "addressCountry": "Pakistan"
+  },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+92-336-2631125",
+    "contactType": "Customer Service",
+    "email": "info@orbicure.com",
+    "availableLanguage": ["English", "Urdu"]
+  },
+  "foundingDate": "2015",
+  "founders": [
+    {
+      "@type": "Person",
+      "name": "Kamran Baig"
+    }
+  ],
+  "numberOfEmployees": "100+",
+  "sameAs": [
+    "https://facebook.com/orbicure",
+    "https://twitter.com/orbicure",
+    "https://linkedin.com/company/orbicure",
+    "https://instagram.com/orbicure"
+  ]
+}
+</script>
+
+</body>
+</html>
