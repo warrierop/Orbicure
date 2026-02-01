@@ -1332,7 +1332,7 @@ window.addEventListener('scroll', () => {
     }
 });
 
-// Product Data - In a real app, this would come from an API
+// Product Data
 const products = [
     {
         id: 1,
@@ -1353,7 +1353,7 @@ const products = [
         badge: "Soon",
         icon: "fas fa-brain",
         features: ["Cognitive Enhancement", "Neural Protection", "Memory Support", "Fast Acting"]
-    },
+    }
 ];
 
 // DOM Elements
@@ -1412,46 +1412,49 @@ function renderProducts() {
     }
     
     // Render products with animation delay
-filteredProducts.forEach((product, index) => {
-    const productCard = document.createElement('div');
-    productCard.className = 'product-card';
-    productCard.style.transitionDelay = `${index * 0.1}s`;
-    
-    productCard.innerHTML = `
-        ${product.badge ? `<div class="product-badge">${product.badge}</div>` : ''}
-        <div class="product-image">
-            <i class="${product.icon} product-icon"></i>
-        </div>
-        <div class="product-content">
-            <span class="product-category">
-                ${product.category.charAt(0).toUpperCase() + product.category.slice(1)}
-            </span>
-            <h3 class="product-title">${product.name}</h3>
-            <p class="product-description">${product.description}</p>
-            <div class="product-features">
-                ${product.features.map(feature => `<span class="product-feature">${feature}</span>`).join('')}
+    filteredProducts.forEach((product, index) => {
+        const productCard = document.createElement('div');
+        productCard.className = 'product-card';
+        productCard.style.transitionDelay = `${index * 0.1}s`;
+        
+        productCard.innerHTML = `
+            ${product.badge ? `<div class="product-badge">${product.badge}</div>` : ''}
+            <div class="product-image">
+                <i class="${product.icon} product-icon"></i>
             </div>
-            <div class="product-footer">
-                <div class="product-price">${product.price}</div>
-                <button class="product-btn" data-product-id="${product.id}">
-                    <i class="fas fa-eye"></i> View Details
-                </button>
+            <div class="product-content">
+                <span class="product-category">
+                    ${product.category.charAt(0).toUpperCase() + product.category.slice(1)}
+                </span>
+                <h3 class="product-title">${product.name}</h3>
+                <p class="product-description">${product.description}</p>
+                <div class="product-features">
+                    ${product.features.map(feature => `<span class="product-feature">${feature}</span>`).join('')}
+                </div>
+                <div class="product-footer">
+                    <div class="product-price">${product.price}</div>
+                    <button class="product-btn" data-product-id="${product.id}">
+                        <i class="fas fa-eye"></i> View Details
+                    </button>
+                </div>
             </div>
-        </div>
-    `;
-    
-    productsGrid.appendChild(productCard);
+        `;
+        
+        productsGrid.appendChild(productCard);
 
-    // Add click event for product button
-    const viewBtn = productCard.querySelector('.product-btn');
-    viewBtn.addEventListener('click', () => {
-        if (product.id === 1) {
-            window.location.href = "Denpro.html";
-        }
+        // Add click event for product button
+        const viewBtn = productCard.querySelector('.product-btn');
+        viewBtn.addEventListener('click', () => {
+            // For DenPro product, redirect to Denpro.html
+            if (product.name === "DenPro") {
+                window.location.href = "Denpro.html";
+            }
+            // For other products, show a message
+            else {
+                alert(`Viewing details for ${product.name}\n\nDetailed product page coming soon.`);
+            }
+        });
     });
-});
-
-const viewBtn = productCard.querySelector('.product-btn'); viewBtn.addEventListener('click', () => { // For Den Pro, we'll create a special page later if (product.id === 1) { alert(Opening Den Pro product page...\n\nThis will be implemented as a separate detailed product page.); } else { alert(Viewing details for ${product.name}\n\nPrice: ${product.price}\nCategory: ${product.category}\n\nThis will open a detailed product page in the next implementation phase.); } }); });
     
     // Animate cards
     setTimeout(() => {
